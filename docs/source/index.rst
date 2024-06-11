@@ -14,3 +14,5 @@ Contents
 
    context
    methodology
+   technology
+   pills
