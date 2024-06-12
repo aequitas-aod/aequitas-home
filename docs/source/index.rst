@@ -15,4 +15,5 @@ Contents
    context
    methodology
    technology
+   usecases
    pills
