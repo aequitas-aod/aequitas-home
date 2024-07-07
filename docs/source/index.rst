@@ -14,6 +14,8 @@ Contents
 
    context
    methodology
+   detection
+   mitigation
    technology
    usecases
    pills
