@@ -1,4 +1,4 @@
-AEQUITAS AI Fairness Methodology
+AI fairness in the AI system lifecycle: the holistic AEQUITAS approach
 =================================
 
 Introduction
@@ -11,12 +11,12 @@ Fair-by-design Approaches
 * Socio-legal Lens (D5.1 & some other deliverables from Wp2 and Wp6)
 * Bridging the gap needed: motivation
 
-Meta-Methodology
+FairBridge: Converting Legal and Social Principles into AI Fairness Techniques
 ------------
 
 * HICCS paper (plus other stuff from D5.3)
 
-AI fairness in the AI system lifecycle: the holistic AEQUITAS approach
+AI fairness Methodology
 ------------
 
 * building blocks “clickable”
