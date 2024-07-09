@@ -23,7 +23,8 @@ First, it is important to emphasize that the selected fairness definition will a
 
 When we move from a natural language definition of fairness that considers legal and social aspects to a concept that is understandable by an AI system, we refer to it as **computational fairness**.
 
-.. note::
+~ ~ ~
+**NOTE**
 
 **Computational fairness** refers to the practice of ensuring that algorithms and AI systems operate in a way that is equitable and free from bias. It involves **translating principles of fairness, which often encompass legal, ethical, and social dimensions, into precise, measurable criteria** that can be understood and enforced by computational systems.
 
@@ -34,6 +35,7 @@ In summary, computational fairness seeks to operationalize abstract fairness con
 * Measuring and monitoring: continuously evaluating AI systems to ensure they meet fairness constraints. This includes using metrics to measure discrimination (see :ref:detection.rst)
 * Mitigation strategies: applying techniques to address and reduce identified biases (see :ref:mitigation.rst)
 
+~ ~ ~
 
 
 The AEQUITAS project
