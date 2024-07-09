@@ -17,15 +17,15 @@ The research field of AI fairness is very active today. Typically, there are two
 
 ::
 
-What does it mean to be non-discriminatory in a decision?
+    What does it mean to be non-discriminatory in a decision?
 
 First, it is important to emphasize that the selected fairness definition will align with a certain **policy** that is to be enforced in a specific context. This definition will then be integrated into the algorithm.
 
 When we move from a natural language definition of fairness that considers legal and social aspects to a concept that is understandable by an AI system, we refer to it as **computational fairness**.
 
-::
+.. Computational fairness::
 
-**Computational fairness** refers to the practice of ensuring that algorithms and AI systems operate in a way that is equitable and free from bias. It involves **translating principles of fairness, which often encompass legal, ethical, and social dimensions, into precise, measurable criteria** that can be understood and enforced by computational systems.
+    **Computational fairness** refers to the practice of ensuring that algorithms and AI systems operate in a way that is equitable and free from bias. It involves **translating principles of fairness, which often encompass legal, ethical, and social dimensions, into precise, measurable criteria** that can be understood and enforced by computational systems.
 
 In summary, computational fairness seeks to operationalize abstract fairness concepts into actionable, measurable practices within AI systems to ensure they are just and unbiased in their decision-making processes. This process typically includes:
 
