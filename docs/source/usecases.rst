@@ -1,8 +1,8 @@
 Use Cases
-=================================
+#########
 
 Healthcare
-------------
+**********
 
 * Use case name
 * general description and introduction
@@ -10,7 +10,7 @@ Healthcare
 * Results
 
 Recruitment
-------------
+***********
 
 * Use case name
 * general description and introduction
