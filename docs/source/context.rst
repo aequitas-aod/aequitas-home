@@ -31,8 +31,8 @@ In summary, computational fairness seeks to operationalize abstract fairness con
 
 * Defining fairness notions: establishing what fairness means within a specific context and translate it in computational terms
 * Implementing fairness in algorithms: integrating fairness considerations into the design and functioning of AI systems
-* Measuring and monitoring: continuously evaluating AI systems to ensure they meet fairness constraints. This includes using metrics to measure discrimination (see :ref:detection.rst)
-* Mitigation strategies: applying techniques to address and reduce identified biases (see :ref:mitigation.rst)
+* Measuring and monitoring: continuously evaluating AI systems to ensure they meet fairness constraints. This includes using metrics to measure discrimination (see :ref:detection)
+* Mitigation strategies: applying techniques to address and reduce identified biases (see :ref:mitigation)
 
 
 
