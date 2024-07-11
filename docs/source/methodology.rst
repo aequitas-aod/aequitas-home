@@ -1,4 +1,4 @@
-AI fairness in the AI system lifecycle: the holistic AEQUITAS approach
+AI fairness in the AI system lifecycle: the holistic AEQUITAS methodology
 ######################################################################
 
 There is a need for a more holistic approach to fair AI, that includes technical
@@ -25,7 +25,7 @@ implementing fairness-aware algorithms, and incorporating transparency and
 accountability mechanisms into AI systems.
 
 We address this complex problem by proposing a **meta-methodology** -- namely,
-:ref:`FairBridge<FairBridge: Converting Legal and Social Principles into AI 
+:ref:`FairBridge<FairBridge: Converting Legal and Social Principles into AI
 Fairness Techniques>` -- offering a reference for defining AI fairness
 methodologies that integrate all three perspectives (social, legal, and
 technical ones).  The meta-methodology utilizes a questionnaire-based system
@@ -47,9 +47,9 @@ The key takeaways are that there are significant gaps between these
 perspectives:
 
 * The technical point of view focuses on a narrower – and more limited – AI
-  lifecycle compared to the broader social and legal perspective.  
+  lifecycle compared to the broader social and legal perspective.
 * It is very rare for technical solutions to cover the entire AI lifecycle,
-  because its narrower definition compared to its socio/legal counterpart. 
+  because its narrower definition compared to its socio/legal counterpart.
 * Technical methods typically intervene at very specific phases.
 
 Albeit there are significant differences from the socio/legal/ethical lens and
@@ -103,7 +103,7 @@ the outcomes of an AI system should not vary if the population is split into
 groups (e.g., by protected attributes). An important strand of literature seeks
 to implement mathematical fairness metrics to assess a model’s impartiality
 towards subgroups.  Different statistical fairness metrics lead to varying ways
-to assess bias in a AI system. 
+to assess bias in a AI system.
 
 Fairness Social Perspective
 ---------------------------
@@ -116,7 +116,7 @@ field was trying to achieve.
 
 **Distributive fairness** refers to the fairness of the *outcomes (aims)* of
 decision making, while **procedural fairness** refers to the fairness of the
-*decision-making processes (means)* that lead to the outcomes. 
+*decision-making processes (means)* that lead to the outcomes.
 
 Technology is the result of a process of social construction with the
 contribution of a variety of stakeholders.
@@ -128,9 +128,9 @@ contribution of a variety of stakeholders.
 
 * **Disparate impact** happens when members of a marginalized class are
   negatively affected more than others when using a formally neutral policy or
-  rule. 
+  rule.
 
-    * It is unintentional or indirect discrimination. 
+    * It is unintentional or indirect discrimination.
 
 * **Disparate treatment** refers to the situation where an individual is
   intentionally treated differently based on their membership of a marginalized
@@ -206,14 +206,14 @@ Technical Lens
 There is a dearth of fair-by-design methodologies tackled from the
 engineering/technology perspective. Technological approaches mostly focus on
 specific phases of the AI lifecycle (e.g., data collection, training of models,
-evaluation of results, etc.). 
+evaluation of results, etc.).
 
 AI outside of the ML subfield is extremely underrepresented, and this is
 especially true from the technological point of view. This is a limitation:
 
 * There are many AI algorithms that do not fall into the ML categories whose
   impact to society and economy is non-negligible and whose behavior can be
-  influenced by various biases. 
+  influenced by various biases.
 
 * We recommend researchers and practitioners to start increasing their
   attentions to other AI domains as well.
@@ -233,11 +233,11 @@ classification is the following:
   technique. The methods, that modify the training data are at odds with
   policies like GDPR’s right to an explanation, potentially introducing new
   biases. Sufficient knowledge of the data and veracity assumptions are
-  required.  
+  required.
 * **In-processing techniques** modify the traditional learning algorithms to
   account for fairness during the model training phase. They require a higher
   technological effort and integration with standard ML libraries to avoid
-  porting challenges.  
+  porting challenges.
 * **Post-processing** is a set of methods that can be run on the output scores
   of the classifier as a post-training processing step to make decisions fairer.
   The accuracy is suboptimal when compared to “equally fair” classifiers and
@@ -268,7 +268,7 @@ fairness and mitigating bias in AI systems:
 
 * It allows for a comprehensive understanding of how bias can infiltrate at
   various stages, from data collection and model training to deployment and
-  impact assessment.  
+  impact assessment.
 * By examining the entirety of the process, we can identify and address
   potential biases more effectively, ensuring fairness across all stages of
   development and implementation.
@@ -306,16 +306,16 @@ experts (i.e., the developers of AI systems) on the other.
 
 Summarizing:
 
-* There is a clear gap in current fair-by-design practice. 
+* There is a clear gap in current fair-by-design practice.
 * The integration of social, legal, ethical, and technological
-  perspectives presents two challenges: complexity and interdisciplinarity. 
+  perspectives presents two challenges: complexity and interdisciplinarity.
 * Each perspective operates within its own framework:
 
     * Social, legal, and ethical perspectives focus on human behavior, ethical
       principles designed for digitalization, and regulation, while
       technological perspectives prioritize efficiency, functionality, and
-      innovation. 
-    * Bridging these perspectives requires interdisciplinary collaboration. 
+      innovation.
+    * Bridging these perspectives requires interdisciplinary collaboration.
     * This is compounded by cultural and contextual differences, which are
       crucial from the legal point of view.
 
@@ -325,11 +325,11 @@ Summarizing:
   rights, democracy, and the rule of law.
 * Pace of change: technology evolves rapidly, outpacing the ability of social,
   ethical and legal frameworks to adapt. This misalignment leads to regulatory
-  gaps and ethical dilemmas.  
+  gaps and ethical dilemmas.
 * Lack of common vocabulary and/or conceptual framework: each discipline has its
   own vocabulary and ‘language’ and concepts whilst quite often referring to the
   same elements or objectives. Mapping and matching these diverging vocabulary
-  and concepts are a lengthy but crucial process. 
+  and concepts are a lengthy but crucial process.
 
 
 FairBridge: Converting Legal and Social Principles into AI Fairness Techniques
@@ -407,7 +407,7 @@ different social and legal contexts.
 
     We require a Fair-by-Design methodology to be based on a Questions/Answers
     (Q/A) mechanism
-    
+
 The questions and their admissible answers should be designed to deepen
 decision-makers understanding of the problem and the domain they are dealing
 with, and to make them aware of any relevant issues concerning their application
