@@ -30,14 +30,18 @@ For simplicity, when defining the presented fairness metrics, we will assume tha
 
 #### Statistical parity (SP)
 
-First introduced in [(Dwork, 2012)](#bibliography), statistical parity states that subjects belonging to groups identified by specific values of a sensitive attribute should have the same probability of being assigned to the positive predicted outcome. Mathematically: 
+First introduced in [(Dwork, 2012)](#bibliography), statistical parity states that subjects belonging to groups identified by specific values of a sensitive attribute should have the same probability of being assigned to the positive predicted outcome. Mathematically:
+
 $$P(d = 1|G = m) = P(d = 1|G = f)$$
+
 In this case, the sensitive attribute $G$ represents an individual's gender and $m$ and $f$ are its possible values ("male" and "female" respectively).
 
 #### Conditional Statistical Parity 
 
 The metric proposed by [(Corbett-Davies, 2017)](#bibliography) extends the previous one by allowing to condition on a specific subset of attributes to affect the outcome. The formula becomes:
+
 $$P(d = 1|G = m, L = l)= P(d = 1|G = f, L = l)$$
+
 In words, SP is computed only taking into consideration those individuals for whom the attribute $L$ has value $l$.
 
 ### Definitions Based on Predicted and Actual Outcomes
@@ -45,22 +49,29 @@ In words, SP is computed only taking into consideration those individuals for wh
 #### Predictive parity
 
 A model satisfies the definition proposed by [(Chouldechova, 2016)](#bibliography) if individuals have equal PPV (Positive Predictive Value) regardless of the sensitive group they belong to. PPV is defined as $P(Y=1|d=1)$, the probability of a subject with a positive predictive value to belong to the positive class. Formally, Predictive Parity is given by:
+
 $$P(Y=1|d=1, G=m) = P(Y=1|d=1, G=f)$$
 
 #### False Positive Error Rate Balance
 
 As the name suggests, this metric ([Chouldechova, 2016](#bibliography)) is satisfied when the protected and unprotected groups have equal false positive rate (FPR). FPR is the probability of a subject belonging to the negative class (*i.e.* the class associated with a "bad" outcome for its members) to be assigned a positive predictive value, $P(d = 1|Y = 0)$. The formal definition for the False Positive Error Rate Balance metric is:
+
 $$P(d = 1|Y = 0,G = m) = P(d = 1|Y = 0,G = f )$$
 
 #### False Negative Error Rate Balance
 
 This metric (see [Chouldechova, 2016](#bibliography)) is also known as Equal Opportunity in the AI fairness literature. A classifier satisfies Equal Opportunity if subjects have equal false negative rates FNR across sensitive groups. FNR is the probability of an individual in the positive class to have a negative predicted value, $P(d = 0|Y = 1)$. The formula for the False Negative Error Rate Balance is:
+
 $$P(d = 0|Y = 1,G = m) = P(d = 0|Y = 1,G = f )$$
-Note that, mathematically, if a classifier with equal FNRs will also have equal TPR: $$P(d = 1|Y = 1,G = m) = P(d = 1|Y = 1,G = f )$$
+
+Note that, mathematically, if a classifier with equal FNRs will also have equal TPR: 
+
+$$P(d = 1|Y = 1,G = m) = P(d = 1|Y = 1,G = f )$$
 
 #### Equalized Odds
 
 This definition ([Hardt, 2016](#bibliography)) combines the previous two meaning that for a classifier to satisfy Equalized Odds it is necessary that both the protected and the unprotected groups have equal TPR and FNR. Formally:
+
 $$P(d = 1|Y = i,G = m) = P(d=1|Y=i,G=f), i \in \{0,1\}$$
 
 ### Definitions Based on Predicted Probabilities and Actual Outcome
@@ -68,6 +79,7 @@ $$P(d = 1|Y = i,G = m) = P(d=1|Y=i,G=f), i \in \{0,1\}$$
 #### Test-fairness
 
 This fairness metric ([Chouldechova, 2016](#bibliography)) is also knows as calibration in the fairness literature. A classifier satisfies this definition if for any predicted probability score $S$, subjects have equal probability to truly belong to the positive class independent of the sensitive group they belong to. In formulas this becomes:
+
 $$P(Y = 1|S = s,G = m) = P(Y = 1|S = s,G = f )$$
 
 #### Balance for positive class
@@ -79,6 +91,7 @@ $$E(S |Y = 1, G = m) = E(S |Y = 1, G = f )$$
 #### Balance for negative class
 
 Balance for the negative class in analogous to Balance for the negative class with the only exception that subjects belonging to the negative class are considered instead. Mathematically: 
+
 $$E(S|Y = 0,G = m) = E(S|Y = 0,G = f )$$
 
 ### Similarity-based measures
