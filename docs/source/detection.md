@@ -72,7 +72,7 @@ $$P(d = 1|Y = 1,G = m) = P(d = 1|Y = 1,G = f )$$
 
 This definition ([Hardt, 2016](#bibliography)) combines the previous two meaning that for a classifier to satisfy Equalized Odds it is necessary that both the protected and the unprotected groups have equal TPR and FNR. Formally:
 
-$$P(d = 1|Y = i,G = m) = P(d=1|Y=i,G=f), i \in \{0,1\}$$
+$$P(d = 1|Y = i,G = m) = P(d=1|Y=i,G=f), i \in \\{ 0,1 \\}$$
 
 ### Definitions Based on Predicted Probabilities and Actual Outcome
 
