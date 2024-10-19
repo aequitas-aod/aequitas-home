@@ -28,6 +28,7 @@ Contents
 .. toctree::
 
    context
+   glossary
    methodology
    detection
    mitigation
