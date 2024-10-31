@@ -1,5 +1,5 @@
 AI fairness in the AI system lifecycle: the holistic AEQUITAS methodology
-######################################################################
+#########################################################################
 
 There is a need for a more holistic approach to fair AI, that includes technical
 steps, sociological activities, legal compliance measures and understanding, and

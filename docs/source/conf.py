@@ -4,10 +4,10 @@
 
 project = 'AEQUITAS'
 copyright = '2024, Roberta Calegari'
-author = 'Roberta Calegari'
+author = 'Roberta Calegari, Andrea Borghesi'
 
 release = '0.1'
-version = '0.1.0'
+version = '0.1.1'
 
 # -- General configuration
 
@@ -32,6 +32,9 @@ templates_path = ['_templates']
 # -- Options for HTML output
 
 html_theme = 'sphinx_rtd_theme'
+html_static_path = ["_static"]
+
+html_logo = "_static/logo_AEQUITAS_without_claim_Colors_RGB.svg"
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'

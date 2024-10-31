@@ -2,7 +2,7 @@
 AEQUITAS - Framework for AI Fairness.
 """
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 
 class InvalidKindError(Exception):
