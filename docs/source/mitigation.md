@@ -25,7 +25,7 @@ can improve the fairness, accuracy, and inclusiveness of AI systems.
 To mitigate the bias, it is possible to work through these three stages of model
 development and apply specific methodologies for that stage:
 
-### Pre-procesing
+### Pre-processing
 Pre-processing approaches aim to modify the input data before it is used to
 train AI models. The goal is to remove or reduce biases present in the raw data.
 There are a variety of ways to do this, the most common being:
