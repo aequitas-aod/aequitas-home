@@ -35,3 +35,4 @@ Contents
    technology
    usecases
    pills
+   data_analysis_akkodis
