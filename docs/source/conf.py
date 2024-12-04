@@ -33,6 +33,7 @@ templates_path = ['_templates']
 
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ["_static"]
+html_css_files = ["aequitas_style.css"]
 
 html_logo = "_static/logo_AEQUITAS_without_claim_Colors_RGB.svg"
 
