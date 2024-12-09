@@ -1,3 +1,5 @@
+.. _Akkodis:
+
 Use-case HR1 -- Dataset Analysis 
 ================================
 
