@@ -37,6 +37,10 @@ Healthcare
 * general description and introduction
 * Dataset description & analysis
 * Results
+
+Dermatology
+===========
+
 Synthetic ECG
 =============
 
