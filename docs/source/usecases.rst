@@ -1,16 +1,16 @@
 Use Cases
 #########
 
-Recruitment
-***********
+Domain Recruitment
+******************
 
 * Use case name
 * general description and introduction
 * Dataset description & analysis
 * Results
 
-Society and economics
-*********************
+Domain Society and economics
+****************************
 
 Identification of child neglect
 ===============================
@@ -30,8 +30,8 @@ Method
 
 Data from the AOUBO pediatric emergency room management system will be used to design a new AI system to support doctors in identifying "at-risk" cases given a specific medical history. This case study will benefit from the AEQUITAS socio-technical approach of including and assessing the often disadvantaged background of children and their parent(s). Being aware that the accompanying parent is in the vast majority of cases the mother that might be without a driving license, living in less serviced urban areas, or – in some cases – in need of her husband’s permission to move autonomously, is fundamental to have a full picture of the patient. This is a typical case where intersectionality does play a role as gender and race lines of inequality interact and multiply possible negative discriminatory effects. This relevant socio-economic background is crucial in 2 directions: 1. It is relevant when designing and developing the AI system in support of doctors’ decisions because it adds a novel layer of information upon which the decision is made and 2. It is relevant to doctors’ evaluation of the possible protocols. The technical solutions will avoid the risk of repeating, amplifying and contributing to gender stereotypes in the overall evaluation of patient history. The case study develop a predictive system from scratch, following methodologies and techniques (WP5) and comparing its results with those suggested by human experts to assess their fairness.
 
-Healthcare
-**********
+Domain: Healthcare
+******************
 
 * Use case name
 * general description and introduction
