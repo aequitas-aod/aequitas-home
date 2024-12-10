@@ -1,7 +1,7 @@
 .. _Akkodis:
 
-Use-case HR1 -- Dataset Analysis 
-================================
+Akkodis Dataset Analysis
+========================
 
 .. contents:: Table of Contents
    :depth: 2
