@@ -9,12 +9,12 @@ Domain Recruitment
 * Dataset description & analysis
 * Results
 
-Bias-free recruiting system
-===========================
+Use case HR1: Bias-free recruiting system
+=========================================
 
 
-Job-matching recruiting tool
-============================
+Use case HR2: Job-matching recruiting tool
+==========================================
 
 .. toctree::
    :maxdepth: 3
@@ -25,8 +25,8 @@ Job-matching recruiting tool
 Domain Society and economics
 ****************************
 
-Identification of child neglect
-===============================
+Use case S1: Identification of child neglect
+============================================
 
 Context
 -------
@@ -35,6 +35,8 @@ In the last decades, child abuse and neglect have seen soaring numbers. The broa
 
 Goal
 ----
+Use case S2: Disadvantaged students
+===================================
 
 To develop an innovative AI system following AEQUITAS methodologies to detect and assess risk for child abuse and neglect within hospital settings, prioritizing the prevention and reduction of bias against ethnic and socioeconomic disadvantaged communities. The possibility of racial bias in AI systems reinforces our challenge of addressing racism through an AI system and finding the optimal form of human-machine collaboration.
 .. toctree::
@@ -54,11 +56,11 @@ Domain: Healthcare
 * Dataset description & analysis
 * Results
 
-Dermatology
-===========
+Use case HC1: Dermatology
+=========================
 
-Synthetic ECG
-=============
+Use case HC2: Synthetic ECG
+===========================
 
 Context
 -------
