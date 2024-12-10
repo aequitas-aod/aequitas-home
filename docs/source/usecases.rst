@@ -17,7 +17,7 @@ Use case HR2: Job-matching recruiting tool
 ==========================================
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
 
    usecase-hr2-akkodis
 
@@ -29,7 +29,7 @@ Use case S1: Identification of child neglect
 ============================================
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
 
    usecase-s1-child-neglect
 
@@ -37,7 +37,7 @@ Use case S2: Disadvantaged students
 ===================================
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
 
    usecase-s2-disadvantaged-students
 
