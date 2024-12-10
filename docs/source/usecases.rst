@@ -4,11 +4,6 @@ Use Cases
 Domain Recruitment
 ******************
 
-* Use case name
-* general description and introduction
-* Dataset description & analysis
-* Results
-
 Use case HR1: Bias-free recruiting system
 =========================================
 
@@ -44,11 +39,6 @@ Use case S2: Disadvantaged students
 
 Domain: Healthcare
 ******************
-
-* Use case name
-* general description and introduction
-* Dataset description & analysis
-* Results
 
 Use case HC1: Dermatology
 =========================
