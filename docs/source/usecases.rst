@@ -7,6 +7,11 @@ Domain Recruitment
 Use case HR1: Bias-free recruiting system
 =========================================
 
+.. toctree::
+   :maxdepth: 2
+
+   usecase-hr1-adecco
+
 
 Use case HR2: Job-matching recruiting tool
 ==========================================
@@ -42,6 +47,12 @@ Domain: Healthcare
 
 Use case HC1: Dermatology
 =========================
+
+.. toctree::
+   :maxdepth: 2
+
+   usecase-hc1-dermatology
+
 
 Use case HC2: Synthetic ECG
 ===========================
