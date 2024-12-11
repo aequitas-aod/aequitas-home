@@ -7,6 +7,9 @@ Domain Recruitment
 Use case HR1: Bias-free recruiting system
 =========================================
 
+.. note::
+   This is a placeholder text based on the (updated) original project proposal.
+
 .. toctree::
    :maxdepth: 2
 
@@ -56,6 +59,9 @@ Use case HC1: Dermatology
 
 Use case HC2: Synthetic ECG
 ===========================
+
+.. note::
+   This is a placeholder text based on the (updated) original project proposal.
 
 Context
 -------

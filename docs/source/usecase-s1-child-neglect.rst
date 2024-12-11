@@ -2,6 +2,9 @@
 Identification of child neglect
 ===============================
 
+.. note::
+   This is a placeholder text based on the (updated) original project proposal.
+
 Context
 -------
 
