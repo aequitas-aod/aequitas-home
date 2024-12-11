@@ -37,7 +37,7 @@ The columns of the table represent relevant features collected for each student.
 
 Questionnaires were standardized; consequently, the features obtained from them are either categorical or numerical. However, the data is not clean as missing values are present, and they are not evenly distributed across the features. Given the high dimensionality of the dataset, preprocessing is necessary to make it more manageable and suitable for the tasks we intend to address
 
-For more information about the data and preprocessing, see https://zenodo.org/records/11171863.
+For more information about the data and preprocessing, see https://zenodo.org/records/11171863 and https://ceur-ws.org/Vol-3808/paper17.pdf.
 
 Known biases and unfairness
 ---------------------------
