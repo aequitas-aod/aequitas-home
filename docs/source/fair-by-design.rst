@@ -21,3 +21,9 @@ Fair-by-Design Methodology
 
 Experimentation Environment
 *************************************************
+
+.. raw:: html
+
+   <div style="text-align: center;">
+       <img src="img/fair-by-design.png" alt="AEQUITAS Fair-by-Design Methodology" width="600">
+   </div>
