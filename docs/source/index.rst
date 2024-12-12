@@ -34,3 +34,4 @@ Contents
    technology
    usecases
    pills
+   fair-by-design
