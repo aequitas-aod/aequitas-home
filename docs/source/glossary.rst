@@ -1,7 +1,7 @@
 Glossary
 ########
 
-AI Stakeholder Identification Methodology (AISIM)
+AI Stakeholder Identification Methodology (Terms and Definitions)
 *************************************************
 AEQUITAS has developed a preliminary methodology for identifying relevant
 stakeholders to be involved in the design process of AI systems and to set a
