@@ -40,3 +40,5 @@ html_logo = "_static/logo_AEQUITAS_without_claim_for_Dark_Background_RGB.svg"
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
+
+html_allow_huge_pages = True

@@ -6,10 +6,6 @@ Fair-by-Design Methodology
 
 .. raw:: html
 
-<div style="text-align: center;">
-       <img src="img/fair-by-design.png" alt="AEQUITAS Fair-by-Design Methodology: click on one block" width="600">
-</div>
-
   <div style="text-align: center;">
          <img src="img/fair-by-design.png" alt="AEQUITAS Fair-by-Design Methodology: click on one block" usemap="#fair_by_design_map" width="600">
          <map name="fair_by_design_map">
