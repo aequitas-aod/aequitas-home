@@ -5,11 +5,9 @@ Fair-by-Design Methodology
 *************************************************
 
 .. image:: img/fair-by-design.png
-  :width: 300
+  :width: 600
   :alt: AEQUITAS Fair-by-Design Methodology: click on one block
-
-.. image:: img/fair-by-design.png
-   :usemap: #fair_by_design_map
+  :usemap: #fair_by_design_map
 
 .. raw:: html
 
