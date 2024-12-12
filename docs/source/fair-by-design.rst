@@ -22,13 +22,4 @@ Fair-by-Design Methodology
 Experimentation Environment
 *************************************************
 
-.. image:: img/fair-by-design.png
-   :alt: AEQUITAS Fair-by-Design Methodology
-   :width: 600
-   :align: center
-
-.. raw:: html
-
-   <div style="text-align: center;">
-       <img src="img/fair-by-design.png" alt="AEQUITAS Fair-by-Design Methodology" width="600">
-   </div>
+Access to the `Experimentation Environment <https://aequitas.apice.unibo.it/>`_
