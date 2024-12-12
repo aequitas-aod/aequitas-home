@@ -7,7 +7,7 @@ Fair-by-Design Methodology
 .. raw:: html
 
    <div style="text-align: center;">
-       <img src="img/fair-by-design.png" alt="AEQUITAS Fair-by-Design Methodology: click on one block" usemap="#fair_by_design_map" width="600">
+       <img src="_static/fair-by-design.png" alt="AEQUITAS Fair-by-Design Methodology: click on one block" usemap="#fair_by_design_map" width="600">
        <map name="fair_by_design_map" id="fair_by_design_map">
            <area shape="rect" coords="10,10,200,50" href="scoping.html" alt="Scoping Phase" title="Scoping Phase">
            <area shape="rect" coords="210,10,400,50" href="risk_analysis.html" alt="Risk Analysis Phase" title="Risk Analysis Phase">
