@@ -1,0 +1,225 @@
+.wy-nav-content {
+    max-width: 100%;
+    background: #6f81ee;
+    font-size: 1rem;
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+p,
+footer,
+.wy-breadcrumbs a,
+.wy-breadcrumbs .active {
+    color: #fff;
+    font-weight: 400;
+}
+
+p a,
+p a:visited,
+footer a,
+footer a:visited {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.headerlink,
+.wy-breadcrumbs a,
+.wy-breadcrumbs a:visited {
+    color: #fff;
+}
+
+p a:hover,
+.headerlink:hover {
+    color: #85faff !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #fff;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 15px;
+}
+
+h6 {
+    font-size: 10px;
+}
+
+.btn.btn-neutral {
+    border-radius: 30px;
+    font-size: 16px;
+    line-height: normal;
+    letter-spacing: 0.88px;
+    color: #0047BB !important;
+    background-color: #003EA4 !important;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: none;
+    transition: background-color 300ms linear;
+    color: #fff !important;
+    border: 1px solid #003EA4 !important;
+}
+
+.btn-neutral span {
+    display: none !important;
+}
+
+.btn-neutral:hover {
+    background-color: transparent !important;
+    color: #003EA4 !important;
+    text-decoration: none !important;
+}
+
+.wy-side-scroll {
+    background-color: #5265d3;
+}
+
+.wy-menu-vertical a,
+.wy-menu-vertical li.current a {
+    font-size: 14px;
+    line-height: 17px;
+    padding: 18px 20px 17px 14px;
+    display: block;
+    color: #fff;
+    border: 0 !important;
+    border-top: 1px solid #fff !important;
+    border-bottom: 1px solid #fff !important;
+    background-color: transparent !important;
+}
+
+.wy-menu-vertical a:hover {
+    background-color: transparent !important;
+    color: #85faff !important;
+}
+
+.wy-menu-vertical li.current {
+    background-color: transparent !important;
+}
+
+.wy-menu-vertical li.current>a,
+.wy-menu-vertical li.current>a button.toctree-expand,
+.wy-menu-vertical li.on a button.toctree-expand,
+.wy-menu-vertical li.on a {
+    background-color: transparent !important;
+    color: #85faff !important;
+    border-color: #fff;
+}
+
+.wy-menu-vertical li.current ul {
+    padding-left: 20px;
+}
+
+.wy-menu-vertical li.current ul li:first-child a {
+    border-top: 0 !important;
+}
+
+.wy-menu-vertical li.current ul li:last-child a {
+    border-bottom: 0 !important;
+}
+
+.wy-menu-vertical li.current a button.toctree-expand,
+.wy-menu-vertical li.on a button.toctree-expand,
+.wy-menu-vertical li button.toctree-expand {
+    display: block !important;
+    position: absolute;
+    right: 20px;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.wy-side-nav-search {
+
+    background-color: transparent;
+
+}
+
+.wy-side-nav-search .icon.icon-home {
+    font-size: 0;
+}
+
+
+.wy-side-nav-search img {
+    display: block !important;
+    width: 180px !important;
+}
+
+ul,
+ol,
+ul li,
+ol li {
+    color: #fff !important;
+}
+
+.wy-nav-side {
+    padding-bottom: 0 !important;
+}
+
+.rst-content .admonition-todo p,
+.rst-content .admonition p,
+.rst-content .attention p,
+.rst-content .caution p,
+.rst-content .danger p,
+.rst-content .error p,
+.rst-content .hint p,
+.rst-content .important p,
+.rst-content .note p,
+.rst-content .seealso p,
+.rst-content .tip p,
+.rst-content .warning p,
+.wy-alert p,
+.highlight-default pre {
+    color: #000 !important;
+}
+
+.rst-content .admonition-todo p.admonition-title,
+.rst-content .admonition p.admonition-title,
+.rst-content .attention p.admonition-title,
+.rst-content .caution p.admonition-title,
+.rst-content .danger p.admonition-title,
+.rst-content .error p.admonition-title,
+.rst-content .hint p.admonition-title,
+.rst-content .important p.admonition-title,
+.rst-content .note p.admonition-title,
+.rst-content .seealso p.admonition-title,
+.rst-content .tip p.admonition-title,
+.rst-content .warning p.admonition-title,
+.wy-alert p.admonition-title {
+    color: #fff !important;
+}
+
+.toctree-wrapper a,
+.toctree-wrapper p {
+    color: #fff !important;
+}
+
+.toctree-wrapper a:hover {
+    color: #85faff !important;
+}
+
+.toctree-wrapper a:visited {
+    color: #0047BB !important;
+}
