@@ -18,4 +18,4 @@ Fair-by-Design Methodology
 Experimentation Environment
 *************************************************
 
-Access to the `Experimentation Environment <https://aequitas.apice.unibo.it/>`_
+Access to the `Experimentation Environment <aequitas.apice.unibo.it>`_
