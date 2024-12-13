@@ -44,25 +44,20 @@ Known biases and unfairness
 
 #. **Halo Effect**: From teachers towards students, inferring skills, abilities, or attributes of a person based on a first impression (e.g., socioeconomic background, race, gender, etc.). Specifically, when marking is based on behaviours or characteristics of a student unrelated to the elements to be assessed within a subject.
 
-#. ***Confirmation Bias**: Both by teachers and students. The tendency to give rigor and truthfulness to data, ideas, or reasoning that align with what we believe to be true. Conversely, ignoring data, ideas, or explanations that cast doubt on our beliefs.
+#. **Confirmation Bias**: Both by teachers and students. The tendency to give rigor and truthfulness to data, ideas, or reasoning that align with what we believe to be true. Conversely, ignoring data, ideas, or explanations that cast doubt on our beliefs.
 
 #. **Status Quo Bias**: Resistance to educational innovation by teachers. Preferring the environment and situation to remain stable. More value is placed on potential losses from change or innovation than on potential future gains.
 
 #. **Sampling Bias**: Some specific students could not attend to school the day of the assessments, or they do not answer the questionnaires. Usually, these students come from more disadvantaged contexts, implying samples with underrepresentation of lower-class households or low performer students.
 
-#. ***Selection Bias**: Students and teachers are not randomly assigned to schools. Conversely, more motivated parents and teachers select better schools, generating self-selection problems (endogeneity). Then, schools’ value-added can be biased because better performance can be driven by the presence of better students and teachers.
+#. **Selection Bias**: Students and teachers are not randomly assigned to schools. Conversely, more motivated parents and teachers select better schools, generating self-selection problems (endogeneity). Then, schools’ value-added can be biased because better performance can be driven by the presence of better students and teachers.
 
 .. rubric:: References
 
-.. [1] Diener, E., Diener, M., & Diener, C. (1995). Factors predicting the subjective well-being of
-nations. Journal of personality and social psychology, 69(5), 851.
+.. [1] Diener, E., Diener, M., & Diener, C. (1995). Factors predicting the subjective well-being of nations. Journal of personality and social psychology, 69(5), 851.
 
-.. [2] Ladd, H. (Ed.). (2011). Holding schools accountable: Performance-based reform in
-education. Brookings Institution Press.
+.. [2] Ladd, H. (Ed.). (2011). Holding schools accountable: Performance-based reform in education. Brookings Institution Press.
 
-.. [3] Yu, R., Li, Q., Fischer, C., Doroudi, S., & Xu, D. (2020). Towards Accurate and Fair
-Prediction of College Success: Evaluating Different Sources of Student Data. International
-educational data mining society.
+.. [3] Yu, R., Li, Q., Fischer, C., Doroudi, S., & Xu, D. (2020). Towards Accurate and Fair Prediction of College Success: Evaluating Different Sources of Student Data. International educational data mining society.
 
-.. [4] Sewell, W. H. (1971). Inequality of opportunity for higher education. American Sociological
-Review, 36(5), 793-809.
+.. [4] Sewell, W. H. (1971). Inequality of opportunity for higher education. American Sociological Review, 36(5), 793-809.
