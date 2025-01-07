@@ -1,8 +1,8 @@
 Use Cases
 #########
 
-Domain Recruitment
-******************
+Domain: Recruitment
+********************
 
 Use case HR1: Bias-free recruiting system
 =========================================
@@ -25,8 +25,8 @@ Use case HR2: Job-matching recruiting tool
    usecase-hr2-akkodis
 
 
-Domain Society and economics
-****************************
+Domain: Society and economics
+*****************************
 
 Use case S1: Identification of child neglect
 ============================================
