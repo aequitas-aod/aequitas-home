@@ -25,7 +25,7 @@ The way the dataset is structured (an entry for each step of the candidate’s h
 Eventually, our goal is to improve the fairness and inclusivity of the hiring environment, ensuring that all candidates are evaluated based on their skills and potential rather than extraneous factors.
 
 Recruitment Process
-^^^^^^^^^^^^^^^^^^^
+-------------------------
 
 The Akkodis recruitment process is composed of several phases:
 
@@ -68,7 +68,7 @@ The Akkodis recruitment process is composed of several phases:
     * Set of administrative and technical procedures necessary to prepare the new resource's entry into the company.
 
 Known biases and unfairness
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------
 
 The primary factor that introduces unfairness in this type of recruitment process is the cognitive bias of the people involved. Cognitive biases can lead to subjective judgments that may exclude valuable candidates due to incorrect preconceived notions about specific demographic groups. These biases can manifest at various stages of the process, from the initial search phase to the final hiring decision.
 
@@ -102,6 +102,8 @@ No other pre-processing steps were applied to data. Further details of the data 
 
 Experimentation and results
 -------------------------
+Experiments conducted within the AEQUITAS framework and experimentation environment, leading to the best solution for AKKODIS, can be found here.
+
 
 .. rubric:: References
 
