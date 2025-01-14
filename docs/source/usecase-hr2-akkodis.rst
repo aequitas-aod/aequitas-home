@@ -1,6 +1,4 @@
-
-
-Job-matching recruiting tool
+Context
 ============================
 
 The subject of fairness in the hiring process is crucial to guarantee a diverse workforce that evenly represents all demographics. Assessing the absence of biases in a set of data collected from a real-world example, can not only help immediately a company improve their hiring processes and polices, but also create fair sources for future AI training [1]_. Therefore, this use case, by providing a set of data collected during the candidate selection process of a large engineering company in Italy, is aiming to contribute to these objectives, allowing to create a bias free AI assisted recruiting system.
@@ -11,8 +9,8 @@ The information collected for each candidate includes data related to the candid
 
 This way we are able to represent and analyze the actual state of the profiles taken into consideration by a large engineering company in Italy to evaluate and improve the fairness of the recruitment process in the STEM field.
 
-Use case description
---------------------
+Goal
+============================
 
 The process of finding new candidates in line with the current available positions in the company is complex and involves many steps performed by different professional profiles, spanning from HR representatives, throughout commercial staff (BM), to technical experts.
 
@@ -78,6 +76,9 @@ In particular, as it was observed even in recent studies [2]_,despite the contin
 
 By assessing the fairness of the dataset, the company will be able to raise awareness among all stakeholders about the potential for bias and its implications. Additionally, the company will be able to take corrective actions where necessary.
 
+Method
+============================
+
 Akkodis Data and Analysis
 -------------------------
 
@@ -98,6 +99,9 @@ The dataset consists of 40 columns and 21,377 entries.
 The data has been carefully anonymized. In particular, the name (and the surname) of each candidate has been replaced with a hash code (ID), and names of previous companies where the candidate worked have been removed. Furthermore, the field Citizenship was removed as it presented a high risk of re-identification.
 
 No other pre-processing steps were applied to data. Further details of the data and analysis can be found here: :ref:`Akkodis`.
+
+Experimentation and results
+-------------------------
 
 .. rubric:: References
 
