@@ -36,7 +36,7 @@ Use case S1: Identification of child neglect
 
    usecase-s1-child-neglect
 
-Use case S2: Disadvantaged students
+Use case S2: Unfair Inequality in Education
 ===================================
 
 .. toctree::
