@@ -67,11 +67,11 @@ Experimentation and results
 -------------------------
 Experiments conducted within the AEQUITAS framework and experimentation environment, leading to the best solution for ULL, can be found here:
 
-`Preliminary Analysis <https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/ULL-Preliminary%20Analysis.pdf?rev=1.1>`_
+* `Preliminary Analysis <https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/ULL-Preliminary%20Analysis.pdf?rev=1.1>`_
 
-`Pre-processing Mitigation <https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/ULL-Pre-processing%20Mitigation.pdf?rev=1.1>`_
+* `Pre-processing Mitigation <https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/ULL-Pre-processing%20Mitigation.pdf?rev=1.1>`_
 
-`In-processing Mitigation <https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/ULL-In-processing%20Mitigation.pdf?rev=1.1>`_
+* `In-processing Mitigation <https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/ULL-In-processing%20Mitigation.pdf?rev=1.1>`_
 
 .. rubric:: References
 
