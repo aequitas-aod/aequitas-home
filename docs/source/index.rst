@@ -28,10 +28,7 @@ Contents
 .. toctree::
    context
    glossary
-   methodology
-   detection
-   mitigation
-   technology
+   framework
    innovation
    usecases
    pills
