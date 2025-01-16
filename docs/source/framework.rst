@@ -15,7 +15,7 @@ AI Bias Detection
 
    detection
 
-AI Mitigation
+AI Bias Mitigation
 ********************
 .. toctree::
    :maxdepth: 1

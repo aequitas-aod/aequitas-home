@@ -1,5 +1,3 @@
-# AI Bias Detection
-
 ## Introduction
 
 ### What is Bias Detection?
@@ -36,7 +34,7 @@ $$P(d = 1|G = m) = P(d = 1|G = f)$$
 
 In this case, the sensitive attribute $G$ represents an individual's gender and $m$ and $f$ are its possible values ("male" and "female" respectively).
 
-#### Conditional Statistical Parity 
+#### Conditional Statistical Parity
 
 The metric proposed by [(Corbett-Davies, 2017)](#bibliography) extends the previous one by allowing to condition on a specific subset of attributes to affect the outcome. The formula becomes:
 
@@ -64,7 +62,7 @@ This metric (see [Chouldechova, 2016](#bibliography)) is also known as Equal Opp
 
 $$P(d = 0|Y = 1,G = m) = P(d = 0|Y = 1,G = f )$$
 
-Note that, mathematically, if a classifier with equal FNRs will also have equal TPR: 
+Note that, mathematically, if a classifier with equal FNRs will also have equal TPR:
 
 $$P(d = 1|Y = 1,G = m) = P(d = 1|Y = 1,G = f )$$
 
@@ -90,13 +88,13 @@ $$E(S |Y = 1, G = m) = E(S |Y = 1, G = f )$$
 
 #### Balance for negative class
 
-Balance for the negative class in analogous to Balance for the negative class with the only exception that subjects belonging to the negative class are considered instead. Mathematically: 
+Balance for the negative class in analogous to Balance for the negative class with the only exception that subjects belonging to the negative class are considered instead. Mathematically:
 
 $$E(S|Y = 0,G = m) = E(S|Y = 0,G = f )$$
 
 ### Similarity-based measures
 
-All the previously defined metrics specifically focus only on the sensitive attributes and end up ignoring all the remaining features $X$. This way of treating individuals might still be unfair if "similar individuals must be treated similarly", regardless of their sensitive attributes. 
+All the previously defined metrics specifically focus only on the sensitive attributes and end up ignoring all the remaining features $X$. This way of treating individuals might still be unfair if "similar individuals must be treated similarly", regardless of their sensitive attributes.
 
 This is where similarity based fairness metrics come in.
 

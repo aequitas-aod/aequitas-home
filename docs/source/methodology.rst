@@ -1,16 +1,7 @@
-AI fairness in the AI system lifecycle: the holistic AEQUITAS methodology
-#########################################################################
-
-There is a need for a more holistic approach to fair AI, that includes technical
-steps, sociological activities, legal compliance measures and understanding, and
-ethical considerations.  Addressing the need for AI systems free from
-discrimination requires a multidisciplinary approach that combines social,
-legal, and technical perspectives.  Despite significant advancements in research
-and technical solutions, a gap remains between socio-legal and technical
-approaches.
-
 Introduction
 ************
+
+There is a need for a more holistic approach to fair AI, that includes technical steps, sociological activities, legal compliance measures and understanding, and ethical considerations.  Addressing the need for AI systems free from discrimination requires a multidisciplinary approach that combines social, legal, and technical perspectives.  Despite significant advancements in research and technical solutions, a gap remains between socio-legal and technical approaches.
 
 **Fair-by-design methodology** refers to an approach in the field of AI where
 fairness considerations are integrated into the AI lifecycle from the outset.

@@ -1,5 +1,5 @@
-Technology
-==========
+Introduction
+----------------------
 
 In today's complex and rapidly changing technological landscape, the widespread adoption of AI-based decision support systems across various sectors demands attention to the prevention and mitigation of inequalities and intersectional discrimination that can arise. Building trust in these systems requires domain experts and stakeholders to have confidence in their decisions.
 The objective of AEQUITAS is to develop an experimentation environment to address and tackle the multiple manifestations of bias and unfairness of AI by proposing a controlled experimentation environment for AI developers. Thus, AEQUITAS is a set of tools to carefully assess AI fairness and isolated settings in which Socio-technical systems (STS) are tested, evaluated, and refined to identify and mitigate potential existing bias sources. This type of environment is essential for conducting experiments to assess the performance and behaviour of AI models under various conditions enabling fair and compliant AI systems. It enables developers to make informed decisions about how to improve their AI systems, understand their limitations, and optimize their functionality.

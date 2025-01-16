@@ -1,5 +1,3 @@
-# AI Bias Mitigation
-
 ## What is Bias Mitigation?
 
 
