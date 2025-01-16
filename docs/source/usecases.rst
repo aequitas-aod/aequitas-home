@@ -25,7 +25,7 @@ Use case HR2: Assess and repair job-matching AI-assisted recruiting tool to miti
 Domain: Society and economics
 *****************************
 
-Use case S1: AI assisted identification of child abuse and neglect in hospital with implications for socio economic disadvantaged and racial bias reduction
+Use case S1: AI assisted identification of child abuse and neglect in hospital with implications for socio-economic disadvantaged and racial bias reduction
 ============================================
 
 .. toctree::
