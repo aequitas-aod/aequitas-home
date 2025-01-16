@@ -4,20 +4,8 @@ Use Cases
 Domain: Recruitment
 ********************
 
-Use case HR1: Bias-free recruiting system
+Use case HR1: Bias free AI assisted recruiting system
 =========================================
-
-.. note::
-   This is a placeholder text based on the (updated) original project proposal.
-
-.. toctree::
-   :maxdepth: 2
-
-   usecase-hr1-adecco
-
-
-Use case HR2: Job-matching recruiting tool
-==========================================
 
 .. toctree::
    :maxdepth: 2
@@ -25,10 +13,19 @@ Use case HR2: Job-matching recruiting tool
    usecase-hr2-akkodis
 
 
+Use case HR2: Assess and repair job-matching AI-assisted recruiting tool to mitigate gender and other bias
+==========================================
+
+.. toctree::
+   :maxdepth: 2
+
+   usecase-hr1-adecco
+
+
 Domain: Society and economics
 *****************************
 
-Use case S1: Identification of child neglect
+Use case S1: AI assisted identification of child abuse and neglect in hospital with implications for socio economic disadvantaged and racial bias reduction
 ============================================
 
 .. toctree::
