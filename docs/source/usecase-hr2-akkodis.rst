@@ -102,7 +102,17 @@ No other pre-processing steps were applied to data. Further details of the data 
 
 Experimentation and results
 -------------------------
-Experiments conducted within the AEQUITAS framework and experimentation environment, leading to the best solution for AKKODIS, can be found here.
+Experiments conducted within the AEQUITAS framework and experimentation environment, leading to the best solution for AKKODIS, can be found at the following links.
+
+* `Preliminary Analysis <https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/AKKODIS_Data_Analysis.pdf>`_
+
+* `Synthetic Data Generation via LLMs <https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/AKKODIS_Synthetic_Data_Gen_Langchain.pdf?rev=1.1>`_
+
+* `Synthetic Data Generation via SDV <https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/AKKODIS_Synthetic_Data_Gen_sdv.pdf?rev=1.1>`_
+
+* `Bias Detection <https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/AKKODIS_Bias_Detection.pdf>`_
+
+* `Bias Full Experimentation Pipeline within AEQUITAS <https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/AKKODIS_Full_Experimentation_Pipeline.pdf>`_
 
 
 .. rubric:: References
