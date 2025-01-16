@@ -1,4 +1,4 @@
-Innovative Bias Detection and Mitigation Techniques
+Innovative Techniques for AI Fairness
 =================================================
 
 In our continuous effort to enhance fairness and accuracy in AI systems, the AEQUITAS project has pioneered a suite of innovative techniques designed to detected and mitigate bias. These advanced techniques are embedded directly within our experimentation tool, providing users with powerful, accessible means to conduct experiments and refine processes. The list below details the cutting-edge techniques we have developed, each tailored to address specific challenges in bias detection and correction.
