@@ -32,6 +32,7 @@ Contents
    detection
    mitigation
    technology
+   innovation
    usecases
    pills
    fair-by-design
