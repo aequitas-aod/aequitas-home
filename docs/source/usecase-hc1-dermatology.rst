@@ -1,4 +1,4 @@
-AI assisted identification of dermatological disease
+Context
 ====================================================
 
 There are many areas where AI can assist dermatological experts, such as computer-aided detection/diagnosis, disease prediction, image segmentation, etc. [18]_. The most successful AI applications to dermatology involve processing images and making automated decisions based on images of skin patches, e.g., distinguishing between images portraying healthy skin from images containing dermatological conditions [28]_.
@@ -12,12 +12,15 @@ AI can also come to the rescue to remove this obstacle, as in recent years, grea
 
 To achieve this, researchers employ various strategies, including the incorporation of domain knowledge, data augmentation techniques, and conditioning methods that guide the generation process based on additional information or attributes. Existing approaches in the field have predominantly relied on the utilization of GANs or VAEs. These methods have proven to be effective in generating high-quality samples and learning latent representations. However, they tend to require several thousand training images to learn the features of skin with and without pathological conditions. In this paper, we circumvent this issue and propose to generate realistic skin images with a diffusion model and with a very scarce training set, i.e., a few hundred pictures. We validate our approach using real images taken from a public hospital in Italy (IRCCS Azienda OspedalieroUniversitaria Di Bologna); the code used to implement the approach and run the experiments is publicly available (https://github.com/aequitas-aod/experiment-gen-skin-images). To the best of our knowledge, there are very few approaches in the literature that employ diffusion models in this context and demonstrate their suitability even with a very small training set.
 
-Goal of the use case
---------------------
+Goal
+====================================================
 The goal of this use case is to develop a synthetic image generator that can generate synthetic images of skin with pathologies in a way that captures the complexity and visual characteristics of different skin conditions, including dermatological disease, lesions, and abnormalities [1]_.
 
-Data set and pre-processing
----------------------------
+Method
+====================================================
+
+Data, Analysis, Pre-processing
+-------------------------
 
 Raw data
 ~~~~~~~~
@@ -40,6 +43,13 @@ Even after implementing the aforementioned refinement steps, a significant porti
 
 
 For more information, please refer to https://link.springer.com/chapter/10.1007/978-3-031-63592-2_5.
+
+Experimentation and results
+-------------------------
+
+Experiments conducted within the AEQUITAS framework and experimentation environment, leading to the best solution for HC1, can be found at the following links.
+
+* `Bias Detection <https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/HC1_Bias_Detection.pdf>`_
 
 .. rubric:: References
 
