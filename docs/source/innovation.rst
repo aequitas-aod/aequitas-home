@@ -29,7 +29,11 @@ This section outlines our key contributions to bias detection and awareness, fea
 AI Bias Mitigation
 ------
 
+The AEQUITAS project has led to the development of several innovative techniques aimed at mitigating AI bias and ensuring fairness in various domains. These advancements focus on incorporating fairness into the very structure of AI systems, ensuring not only immediate fairness but also long-term stability and adaptability.
+
 * `FAiRDAS: Fairness-Aware Ranking as Dynamic Abstract System <https://ceur-ws.org/Vol-3523/paper5.pdf>`_: This study proposes an abstract dynamic system to ensure long-term fairness in AI-driven ranking and matchmaking systems. By modeling the evolution of fairness metrics over time, the approach helps analyze system behavior, interactions, and trade-offs, validated through Use case S2.
+
+* `Ensuring Fairness Stability for Disentangling Social Inequality in Access to Education: the FAiRDAS General Method <https://www.ijcai.org/proceedings/2024/820>`_: This work introduces FAiRDAS, a framework for modeling long-term fairness in AI-based educational performance prediction, addressing issues of educational inequality. It provides a customizable solution to ensure fairness while maintaining the stability of mitigation actions over time, demonstrated with real-world data (S2). This is a more advanced and complete study on fairness in AIEd compared to the previous one.
 
 * `Enforcing Fairness via Constraint Injection with FaUCI <https://ceur-ws.org/Vol-3808/paper8.pdf>`_: This work introduces FaUCI, a versatile framework for incorporating fairness constraints into neural networks, supporting a wide range of attribute types. It outperforms state-of-the-art in-processing fairness solutions in terms of effectiveness and efficiency across various fairness metrics.
 
@@ -37,12 +41,14 @@ AI Bias Mitigation
 
 AI Fairness: Methodology and Formal Methods
 ------
+In the AEQUITAS project, a key focus has been to develop comprehensive methodologies and formal methods for assessing and enforcing fairness throughout the AI lifecycle. The main contribution are the following.
 
 * `Assessing and Enforcing Fairness in the AI Lifecycle <https://www.ijcai.org/proceedings/2023/0735.pdf>`_: This survey organizes the current state of research on fairness concepts and related bias-mitigation techniques across the AI lifecycle, and also highlights the gaps and challenges identified during its development. This set the foundation for the AEQUITAS methodology as well as the state of the art techniques included in the experimentation environment.
 
 * `A geometric framework for fairness <https://ceur-ws.org/Vol-3523/paper9.pdf>`_: The paper presents the GEOmetric Framework for Fairness (GEOFFair), which provides an intuitive and rigorous approach to understanding fairness in machine learning. By representing fairness-related elements as vectors and sets, GEOFFair allows for visualizing mitigation techniques, constructing proofs, and exploring fairness properties like distances between fairness vectors and trade-offs between metrics.
 
-Synthetic Data Generation: different bias polarization
+Benchmarks and Synthetic Data Generation: different bias polarization
 ------
+The AEQUITAS project has also made significant advances in the creation of benchmarks and the generation of synthetic data to explore and evaluate bias polarization in AI systems. These innovations are crucial for assessing the impact of various biases and ensuring that mitigation techniques perform effectively under different scenarios.
 
 * `Generation of Clinical Skin Images with Pathology with Scarce Data <https://link.springer.com/chapter/10.1007/978-3-031-63592-2_5>`_: This research presents a Machine Learning (ML) technique to generate synthetic, realistic skin images for dermatology, addressing the challenge of limited training data for disease detection. By using just a few samples, the approach augments datasets and improves image classification tasks, demonstrated with data from Use case HC1.
