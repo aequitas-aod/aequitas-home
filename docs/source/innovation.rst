@@ -23,10 +23,17 @@ This section outlines our key contributions to bias detection and awareness, fea
 
     * `Achieving Complete Coverage with Hypercube-Based Symbolic Knowledge-Extraction Techniques <https://link.springer.com/chapter/10.1007/978-3-031-50396-2_10>`_: This paper introduces novel techniques for symbolic knowledge extraction from a black box. This allows for a better understanding of undesired rules hidden in the algorithm.
 
+    * `Unmasking the Shadows: Leveraging Symbolic Knowledge Extraction to Discover Biases and Unfairness in Opaque Predictive Models <https://ceur-ws.org/Vol-3808/paper13.pdf>`_: This study examines the use of symbolic knowledge-extraction to identify biases in opaque predictive models by analyzing if-then rules. The approach is shown to effectively detect unfair decisions, aiding in the development of fairer, more transparent systems.
+
+
 AI Bias Mitigation
 ------
 
 * `FAiRDAS: Fairness-Aware Ranking as Dynamic Abstract System <https://ceur-ws.org/Vol-3523/paper5.pdf>`_: This study proposes an abstract dynamic system to ensure long-term fairness in AI-driven ranking and matchmaking systems. By modeling the evolution of fairness metrics over time, the approach helps analyze system behavior, interactions, and trade-offs, validated through Use case S2.
+
+* `Enforcing Fairness via Constraint Injection with FaUCI <https://ceur-ws.org/Vol-3808/paper8.pdf>`_: This work introduces FaUCI, a versatile framework for incorporating fairness constraints into neural networks, supporting a wide range of attribute types. It outperforms state-of-the-art in-processing fairness solutions in terms of effectiveness and efficiency across various fairness metrics.
+
+* `Long-Term Fairness Strategies in Ranking with Continuous Sensitive Attributes <https://ceur-ws.org/Vol-3808/paper8.pdf>`_: This work addresses the gap in fairness research by proposing a methodology for ensuring long-term fairness in ranking systems with continuous sensitive attributes.
 
 AI Fairness: Methodology and Formal Methods
 ------
