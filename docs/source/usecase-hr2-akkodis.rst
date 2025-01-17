@@ -112,7 +112,7 @@ Experiments conducted within the AEQUITAS framework and experimentation environm
 
 * `Bias Detection <https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/AKKODIS_Bias_Detection.pdf>`_
 
-* `Bias Full Experimentation Pipeline within AEQUITAS <https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/AKKODIS_Full_Experimentation_Pipeline.pdf>`_
+* `Full Experimentation Pipeline within AEQUITAS <https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/AKKODIS_Full_Experimentation_Pipeline.pdf>`_
 
 
 .. rubric:: References

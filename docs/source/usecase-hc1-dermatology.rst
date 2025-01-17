@@ -51,6 +51,8 @@ Experiments conducted within the AEQUITAS framework and experimentation environm
 
 * `Bias Detection <https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/HC1_Bias_Detection.pdf>`_
 
+* `Full Experimentation Pipeline within AEQUITAS <https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/HC1_Full_Experimentation_Pipeline.pdf?rev=1.1>`_
+
 .. rubric:: References
 
 .. [1] Barhoumi,W.,Khelifa,A.:Skinlesionimageretrievalusingtransferlearning-based approach for query-driven distance recommendation. Computers in Biology and Medicine 137, 104,825 (2021)
