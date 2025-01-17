@@ -16,7 +16,8 @@ Fair-by-Design Methodology
            <area shape="rect" coords="200,360,400,400" href="https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/FDCGM-Methodology-AEQUITAS.pdf?rev=1.1" alt="FDCGM" title="FDCGM">
            <area shape="rect" coords="200,410,400,455" href="https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/FMM-Methodology-AEQUITAS.pdf?rev=1.1" alt="FMM" title="FMM">
            <area shape="rect" coords="200,470,400,520" href="https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/FOIM-Methodology-AEQUITAS.pdf?rev=1.1" alt="FOIM" title="FOIM">
-           <area shape="rect" coords="430,170,490,230" href="https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/TAIRA-Methodology-AEQUITAS.pdf?rev=1.1" alt="TAIRA" title="TAIRA">
+           <area shape="rect" coords="420,170,510,225" href="https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/TAIRA-Methodology-AEQUITAS.pdf?rev=1.1" alt="TAIRA" title="TAIRA">
+           <area shape="rect" coords="420,230,510,295" href="https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/FRIAF-Methodology-AEQUITAS.pdf?rev=1.1" alt="FRIAF" title="FRIAF">
        </map>
    </div>
 
