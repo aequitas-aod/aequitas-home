@@ -117,8 +117,8 @@ Experiments conducted within the AEQUITAS framework and experimentation environm
 
 .. rubric:: References
 
-.. [1] S. Barocas, M. Hardt and A. Narayanan, "Fairness and Machine Learning: Limitations and Opportunities," MIT Press, 2023, pp. 232-261.
+.. [1] S. Barocas, M. Hardt and A. Narayanan, "Fairness and Machine Learning: Limitations and Opportunities" MIT Press, 2023, pp. 232-261.
 
-.. [2] C. Calluso and G. Devetag, "Discrimination in the hiring process - state of the art and implications for policymakers," Equality, Diversity and Inclusion: An International Journal, 2024.
+.. [2] C. Calluso and G. Devetag, "Discrimination in the hiring process - state of the art and implications for policymakers" Equality, Diversity and Inclusion: An International Journal, 2024.
 
-.. [3] Akkodis, "Dataset_2.0_Akkodis.xlsx," Aequitas Consortium Repository, Available under permission, 2024.
+.. [3] Akkodis, "Dataset_2.0_Akkodis.xlsx", Aequitas Consortium Repository, Available under permission, 2024.
