@@ -27,3 +27,5 @@ AI Fairness
 
 AEQUITAS Framework
 ----------------
+
+* `The AEQUITAS Framework and Use Cases <https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/AEQUITAS-Framework%20and%20Environment-July24.pdf?rev=1.1>`_
