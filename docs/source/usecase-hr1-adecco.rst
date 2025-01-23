@@ -43,8 +43,6 @@ Experiments conducted within the AEQUITAS framework and experimentation environm
 
 * `Data Pre-processing <https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/ADECCO_preprocessing.pdf?rev=1.1>`_
 
-* `Synthetic Data Generation via LLMs <https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/ADECCO_Synthetic_Data_Gen_Langchain.pdf?rev=1.1>`_
-
 * `Bias Detection <https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/ADECCO_Bias_Detection.pdf>`_
 
 * `Bias Mitigation <https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/ADECCO_Bias_Mitigation.pdf>`_
