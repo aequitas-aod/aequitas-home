@@ -48,5 +48,3 @@ Experiments conducted within the AEQUITAS framework and experimentation environm
 * `Bias Detection <https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/ADECCO_Bias_Detection.pdf>`_
 
 * `Bias Mitigation <https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/ADECCO_Bias_Mitigation.pdf>`_
-
-* `Bias Full Experimentation Pipeline within AEQUITAS <https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/ADECCO_Full_Experimentation_Pipeline.pdf>`_
