@@ -11,11 +11,11 @@ Fair-by-Design Methodology
        <map name="fair_by_design_map" id="fair_by_design_map">
            <area shape="rect" coords="10,50,500,180" href="https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/MAP-Methodology-AEQUITAS.pdf?rev=1.1" alt="MAP" title="MAP">
            <area shape="rect" coords="10,200,230,260" href="https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/TAIRA-Methodology-AEQUITAS.pdf?rev=1.1" alt="TAIRA" title="TAIRA">
-           <area shape="rect" coords="200,280,300,340" href="https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/PSSA-Methodology-AEQUITAS.pdf?rev=1.1" alt="PSSA" title="PSSA">
-           <area shape="rect" coords="200,360,380,420" href="https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/FRIAF-Methodology-AEQUITAS.pdf?rev=1.1" alt="FRIAF" title="FRIAF">
-           <area shape="rect" coords="200,430,400,480" href="https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/FDCGM-Methodology-AEQUITAS.pdf?rev=1.1" alt="FDCGM" title="FDCGM">
-           <area shape="rect" coords="200,500,400,540" href="https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/FMM-Methodology-AEQUITAS.pdf?rev=1.1" alt="FMM" title="FMM">
-           <area shape="rect" coords="200,550,400,580" href="https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/FOIM-Methodology-AEQUITAS.pdf?rev=1.1" alt="FOIM" title="FOIM">
+           <area shape="rect" coords="240,280,370,340" href="https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/PSSA-Methodology-AEQUITAS.pdf?rev=1.1" alt="PSSA" title="PSSA">
+           <area shape="rect" coords="240,360,430,420" href="https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/FRIAF-Methodology-AEQUITAS.pdf?rev=1.1" alt="FRIAF" title="FRIAF">
+           <area shape="rect" coords="240,430,430,480" href="https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/FDCGM-Methodology-AEQUITAS.pdf?rev=1.1" alt="FDCGM" title="FDCGM">
+           <area shape="rect" coords="240,500,430,540" href="https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/FMM-Methodology-AEQUITAS.pdf?rev=1.1" alt="FMM" title="FMM">
+           <area shape="rect" coords="240,550,430,580" href="https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/FOIM-Methodology-AEQUITAS.pdf?rev=1.1" alt="FOIM" title="FOIM">
 
            <area shape="rect" coords="420,170,510,225" href="https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/TAIRA-Methodology-AEQUITAS.pdf?rev=1.1" alt="TAIRA" title="TAIRA">
            <area shape="rect" coords="420,230,510,295" href="https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/FRIAF-Methodology-AEQUITAS.pdf?rev=1.1" alt="FRIAF" title="FRIAF">
