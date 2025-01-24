@@ -30,4 +30,9 @@ Fair-by-Design Methodology
 Experimentation Environment
 *************************************************
 
-Access to the `Experimentation Environment <http://aequitas.apice.unibo.it>`_
+..
+   _Access to the `Experimentation Environment <http://aequitas.apice.unibo.it>`_
+
+.. note::
+
+    The experimentation environment is under development and will be released soon. See a demo here: `Experimentation Environment <https://aequitas-staging.vercel.app/>
