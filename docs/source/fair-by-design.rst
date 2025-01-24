@@ -35,4 +35,4 @@ Experimentation Environment
 
 .. note::
 
-    The experimentation environment is under development and will be released soon. See a demo here: `Experimentation Environment <https://aequitas-staging.vercel.app/>
+    The experimentation environment is under development and will be released soon. See a demo here: `Experimentation Environment <https://aequitas-staging.vercel.app/>`
