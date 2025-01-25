@@ -468,11 +468,3 @@ Q/A graph is designed, filled, and refined by experts, as prescribed by the
 meta-methodology. Conversely, Q/A paths are constructed by business users and
 technical users and they are tailored to the specific needs of the organization
 they belong to.
-
-
-AI fairness Methodology
-***********************
-
-* building blocks “clickable”
-* for each building block link to the guidelines
-* Development & Evaluation link to the tech

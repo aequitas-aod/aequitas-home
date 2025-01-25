@@ -16,10 +16,6 @@ From a viewpoint perspective, those that were taken in consideration when buildi
 * **Use case viewpoint**: Main representative use cases (data sharing, manipulation and use of datasets, upload to the AI on Demand platform) are described and users are categorised into two main groups, the *Business User (BU)* and the *Technical User (TU)*. The BU takes business and fairness-related decisions and translates them into requirements while the TU  develops AI tools which comply with those requirements.
 * **System viewpoint**: this view describes the platform architecture from a logical perspective and includes a set of containers that fit all the project requirements.
 
-Business Case view
-~~~~~~~~~~~~~~~~~~~
-
-????
 
 Use Case view
 ~~~~~~~~~~~~~~
@@ -53,18 +49,3 @@ The secondary use cases satisfy needs such as:
 1. allowing data exchanges between AEQUITAS users for further experimentation.
 2. allowing interactions with the system manipulate and visualise data
 3. allowing a user to interact with the AI on Demand platform: in this case a user shall be able to both push and pull from AI on Demand
-
-User-guide of the Core-library
-------------------------------
-
-Python API reference of the Core-library
-----------------------------------------
-
-User-guide of the BU questionnaire interface
---------------------------------------------
-
-User-guide of the admin interface for editing the questionnaire
----------------------------------------------------------------
-
-Web API reference of the context service?
------------------------------------------
