@@ -1,5 +1,7 @@
+.. _hc1-context:
+
 Context
-====================================================
+-------
 
 There are many areas where AI can assist dermatological experts, such as computer-aided detection/diagnosis, disease prediction, image segmentation, etc. [18]_. The most successful AI applications to dermatology involve processing images and making automated decisions based on images of skin patches, e.g., distinguishing between images portraying healthy skin from images containing dermatological conditions [28]_.
 
@@ -12,18 +14,22 @@ AI can also come to the rescue to remove this obstacle, as in recent years, grea
 
 To achieve this, researchers employ various strategies, including the incorporation of domain knowledge, data augmentation techniques, and conditioning methods that guide the generation process based on additional information or attributes. Existing approaches in the field have predominantly relied on the utilization of GANs or VAEs. These methods have proven to be effective in generating high-quality samples and learning latent representations. However, they tend to require several thousand training images to learn the features of skin with and without pathological conditions. In this paper, we circumvent this issue and propose to generate realistic skin images with a diffusion model and with a very scarce training set, i.e., a few hundred pictures. We validate our approach using real images taken from a public hospital in Italy (IRCCS Azienda OspedalieroUniversitaria Di Bologna); the code used to implement the approach and run the experiments is publicly available (https://github.com/aequitas-aod/experiment-gen-skin-images). To the best of our knowledge, there are very few approaches in the literature that employ diffusion models in this context and demonstrate their suitability even with a very small training set.
 
+.. _hc1-goal:
+
 Goal
-====================================================
+----
 The goal of this use case is to develop a synthetic image generator that can generate synthetic images of skin with pathologies in a way that captures the complexity and visual characteristics of different skin conditions, including dermatological disease, lesions, and abnormalities [1]_.
 
+.. _hc1-method:
+
 Method
-====================================================
+------
 
 Data, Analysis, Pre-processing
--------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Raw data
-~~~~~~~~
+""""""""
 
 The initial raw dataset comprises a collection of 2495 images, belonging to 187 different medical cases, captured by doctors in hospitals using cameras or mobile phone cameras. Each photograph focuses on a specific patient, with the corresponding label indicating the diagnosed skin disease for that individual. At this stage, the data is in an unprocessed and sensitive format, frequently encompassing personal details, including identifiable facial features or recognizable characteristics. Additionally, although the photos primarily capture a specific body part related to the patient’s condition, they frequently include extraneous background elements or foreground clutter that are unrelated to the main focus. Considering these factors, an initial round of data refinement was necessary, primarily focusing on data cleaning, which involved removing irrelevant regions such as background elements from numerous photos, and ensuring data anonymization. The initial step of the data refinement process involved a manual labeling procedure, consisting of the following steps:
 
@@ -32,20 +38,22 @@ The initial raw dataset comprises a collection of 2495 images, belonging to 187 
 – Mask labelling: for each of the previously extracted patches, a binary mask was created. The purpose is to indicate which areas of the skin within the patch exhibited the presence of the disease.
 
 Fixed-size patches generation
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+"""""""""""""""""""""""""""""
 
 Although the data has undergone significant cleaning, its variable-sized nature prevents its direct utilization by ML models. As a result, a second round of refinement was implemented, this time employing an automatic approach. The primary objective at this stage is to extract fixedsize patches from the existing variable-sized ones, ensuring that diseased skin regions are adequately represented.
 
 Coloured mask generation
-~~~~~~~~~~~~~~~~~~~~~~~~
+""""""""""""""""""""""""
 
 Even after implementing the aforementioned refinement steps, a significant portion of the extracted patches still exhibited undesirable properties, such as poor lighting or blurriness. To address this, an automatic filtering process was applied to eliminate patches with low contrast, common features of both poorly exposed and blurry images. For each of these patches, a binary mask was generated based on the provided labelling. However, inspired by the approach presented in [9]_, we extract a coloured mask as well. This coloured mask was obtained by filling the 0 and 1 regions of the binary mask with the dominant colour found in the corresponding part of the original image. Following these procedures, a total of 8,204 patches were successfully extracted from the initial set of 284 variable-sized images. However, 1,118 patches were discarded due to inadequate contrast. Despite these refinement steps, the dataset cannot be considered entirely clean. Upon closer examination, it was observed that a significant number of images still suffered from poor exposure, and the quality of the masks was often suboptimal. These factors must be taken into account when applying any type of model to this dataset.
 
 
 For more information, please refer to https://link.springer.com/chapter/10.1007/978-3-031-63592-2_5.
 
+.. _hc1-exp:
+
 Experimentation and results
--------------------------
+---------------------------
 
 Experiments conducted within the AEQUITAS framework and experimentation environment, leading to the best solution for HC1, can be found at the following links.
 

@@ -1,7 +1,9 @@
-Context
-============================
+.. _hr2-context:
 
-The subject of fairness in the hiring process is crucial to guarantee a diverse workforce that evenly represents all demographics. Assessing the absence of biases in a set of data collected from a real-world example, can not only help immediately a company improve their hiring processes and polices, but also create fair sources for future AI training [1]_. Therefore, this use case, by providing a set of data collected during the candidate selection process of a large engineering company in Italy, is aiming to contribute to these objectives, allowing to create a bias free AI assisted recruiting system.
+Context
+-------
+
+The subject of fairness in the hiring process is crucial to guarantee a diverse workforce that evenly represents all demographics. Assessing the absence of biases in a set of data collected from a real-world example, can not only help immediately a company improve their hiring processes and polices, but also create fair sources for future AI training [#]_. Therefore, this use case, by providing a set of data collected during the candidate selection process of a large engineering company in Italy, is aiming to contribute to these objectives, allowing to create a bias free AI assisted recruiting system.
 
 The Akkodis use case focuses on the analysis of the dataset created during the company’s recruitment process. This dataset contains information about all candidates and employees that went through the hiring process, including profiles imported from external databases, such as the ones provided by universities.
 
@@ -9,8 +11,10 @@ The information collected for each candidate includes data related to the candid
 
 This way we are able to represent and analyze the actual state of the profiles taken into consideration by a large engineering company in Italy to evaluate and improve the fairness of the recruitment process in the STEM field.
 
+.. _hr2-goal:
+
 Goal
-============================
+----
 
 The process of finding new candidates in line with the current available positions in the company is complex and involves many steps performed by different professional profiles, spanning from HR representatives, throughout commercial staff (BM), to technical experts.
 
@@ -25,7 +29,7 @@ The way the dataset is structured (an entry for each step of the candidate’s h
 Eventually, our goal is to improve the fairness and inclusivity of the hiring environment, ensuring that all candidates are evaluated based on their skills and potential rather than extraneous factors.
 
 Recruitment Process
--------------------------
+-------------------
 
 The Akkodis recruitment process is composed of several phases:
 
@@ -67,8 +71,10 @@ The Akkodis recruitment process is composed of several phases:
 
     * Set of administrative and technical procedures necessary to prepare the new resource's entry into the company.
 
+.. _hr2-context:
+
 Known biases and unfairness
--------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The primary factor that introduces unfairness in this type of recruitment process is the cognitive bias of the people involved. Cognitive biases can lead to subjective judgments that may exclude valuable candidates due to incorrect preconceived notions about specific demographic groups. These biases can manifest at various stages of the process, from the initial search phase to the final hiring decision.
 
@@ -76,20 +82,23 @@ In particular, as it was observed even in recent studies [2]_,despite the contin
 
 By assessing the fairness of the dataset, the company will be able to raise awareness among all stakeholders about the potential for bias and its implications. Additionally, the company will be able to take corrective actions where necessary.
 
-Method
-============================
+.. _hr2-method:
 
-Akkodis Data and Analysis
--------------------------
+Method
+------
+
+.. _hr2-collect:
 
 Data Collection
 ^^^^^^^^^^^^^^^
 
-As it was described in the previous chapter, the Akkodis dataset [3]_ contains data collected during the company’s recruitment process, precisely from the year 2019 to year 2023.
+As it was described in the previous chapter, the Akkodis dataset [#]_ contains data collected during the company’s recruitment process, precisely from the year 2019 to year 2023.
 
 The data are inserted into the Akkodis system by the TA team when looking for potential candidates. More data relating to a specific candidate is added during each phase of the hiring process to fill in information about the interview’s outcome.
 
 The dataset was then created by exporting in an analyzable format the data present on the Akkodis system.
+
+.. _hr2-struct:
 
 Dataset Structure and Pre-Processing
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -100,8 +109,10 @@ The data has been carefully anonymized. In particular, the name (and the surname
 
 No other pre-processing steps were applied to data. Further details of the data and analysis can be found here: :ref:`Akkodis`.
 
+.. _hr2-exp:
+
 Experimentation and results
--------------------------
+---------------------------
 Experiments conducted within the AEQUITAS framework and experimentation environment, leading to the best solution for AKKODIS, can be found at the following links.
 
 * `Preliminary Analysis <https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/AKKODIS_Data_Analysis.pdf>`_
@@ -117,8 +128,8 @@ Experiments conducted within the AEQUITAS framework and experimentation environm
 
 .. rubric:: References
 
-.. [1] S. Barocas, M. Hardt and A. Narayanan, "Fairness and Machine Learning: Limitations and Opportunities" MIT Press, 2023, pp. 232-261.
+.. [#] S. Barocas, M. Hardt and A. Narayanan, "Fairness and Machine Learning: Limitations and Opportunities" MIT Press, 2023, pp. 232-261.
 
-.. [2] C. Calluso and G. Devetag, "Discrimination in the hiring process - state of the art and implications for policymakers" Equality, Diversity and Inclusion: An International Journal, 2024.
+.. [#] C. Calluso and G. Devetag, "Discrimination in the hiring process - state of the art and implications for policymakers" Equality, Diversity and Inclusion: An International Journal, 2024.
 
-.. [3] Akkodis, "Dataset_2.0_Akkodis.xlsx", Aequitas Consortium Repository, Available under permission, 2024.
+.. [#] Akkodis, "Dataset_2.0_Akkodis.xlsx", Aequitas Consortium Repository, Available under permission, 2024.

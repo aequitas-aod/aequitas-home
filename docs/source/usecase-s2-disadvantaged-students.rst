@@ -1,13 +1,15 @@
+.. _s2-context:
+
 Context
-======================
+-------
 
 Academic performance in primary school is a good predictor of an individual's future income
-and well-being [1]_. Anticipating low academic performance levels is relevant to implementing
+and well-being [#]_. Anticipating low academic performance levels is relevant to implementing
 corrective policies at early ages, and anticipating high academic performance is also relevant to
-applying incentive mechanisms to achieve excellence [2]_.
+applying incentive mechanisms to achieve excellence [#]_.
 
 To achieve this, it is necessary to have good predictive models, in terms of accuracy. However,
-it is equally important for these models to generate fair predictions [3]_. This means they should
+it is equally important for these models to generate fair predictions [#]_. This means they should
 provide consistent predictions across different groups, ensuring no disparity in awarding
 excellence prizes to students regardless of their social background or their parents' educational
 levels. To achieve this, it is essential to have models that ensure fairness in their predictions.
@@ -20,17 +22,21 @@ Concerning students, collected data includes information on their academic perfo
 
 We believe the dataset may be exploited to ease the life of students—hence improving the overall quality of the education system. The goal would be to identify the key predictors of academic performance, with a focus on factors that may lead to poor performance or drop-off. Identifying these factors is a fundamental step towards developing interventions that can help students in need— hence promoting fair access to education and ultimately enhancing student success. Intervention here may include: personalized academic support such as tutoring and mentoring, academic counselling to help students develop effective study habits, allocation of essential educational resources on a per-need basis, remedial coursework or enrichment programs to strengthen skills.
 
+.. _s2-goal:
+
 Goal
-======================
-To link the outcomes of predictive models and their degree of bias to the socioeconomic concept of inequality of opportunities [4]_ reflected in the data and real life. Inequality of opportunity in educational achievement is measured as the inequality that is explained by factors that are beyond the control of the individual, such as the socioeconomic status of the parents, the cultural environment at home, the immigrant status, the state of health at birth, the neighborhood of birth, etc. (in the terminology of the AI-fairness literature these are the sensitive variables).
+----
+To link the outcomes of predictive models and their degree of bias to the socioeconomic concept of inequality of opportunities [#]_ reflected in the data and real life. Inequality of opportunity in educational achievement is measured as the inequality that is explained by factors that are beyond the control of the individual, such as the socioeconomic status of the parents, the cultural environment at home, the immigrant status, the state of health at birth, the neighborhood of birth, etc. (in the terminology of the AI-fairness literature these are the sensitive variables).
 
 In particular, we analyze how the existence of certain sensitive variables (referred to as
 circumstances in economics) that explain a relevant percentage of the inequality in educational
 achievement are the cause of generating unfair predictions, as long as they influence the predictive
 models directly or indirectly (i.e., through other predictors).
 
+.. _s2-known:
+
 Known biases and unfairness
----------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 #. **Halo Effect**: From teachers towards students, inferring skills, abilities, or attributes of a person based on a first impression (e.g., socioeconomic background, race, gender, etc.). Specifically, when marking is based on behaviours or characteristics of a student unrelated to the elements to be assessed within a subject.
 
@@ -42,11 +48,12 @@ Known biases and unfairness
 
 #. **Selection Bias**: Students and teachers are not randomly assigned to schools. Conversely, more motivated parents and teachers select better schools, generating self-selection problems (endogeneity). Then, schools’ value-added can be biased because better performance can be driven by the presence of better students and teachers.
 
-Method
-======================
+.. _s2-method:
 
-ULL Data and Analysis
--------------------------
+Method
+------
+
+.. _s2-data:
 
 Data Collection
 ^^^^^^^^^^^^^^^
@@ -57,14 +64,16 @@ The columns of the table represent relevant features collected for each student.
 Questionnaires were standardized; consequently, the features obtained from them are either categorical or numerical. However, the data is not clean as missing values are present, and they are not evenly distributed across the features. Given the high dimensionality of the dataset, preprocessing is necessary to make it more manageable and suitable for the tasks we intend to address.
 
 Dataset Structure and Pre-Processing
-^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 The dataset has been released and is publicly available, increasing the fairness benchmarks in the field. It can be found here: https://zenodo.org/records/11171863.
 
 For more information about the data and preprocessing, see https://zenodo.org/records/11171863 and https://ceur-ws.org/Vol-3808/paper17.pdf.
 
 
+.. _s2-exp:
+
 Experimentation and results
--------------------------
+---------------------------
 Experiments conducted within the AEQUITAS framework and experimentation environment, leading to the best solution for ULL, can be found here:
 
 * `Preliminary Analysis <https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/ULL-Preliminary%20Analysis.pdf?rev=1.1>`_
@@ -75,10 +84,10 @@ Experiments conducted within the AEQUITAS framework and experimentation environm
 
 .. rubric:: References
 
-.. [1] Diener, E., Diener, M., & Diener, C. (1995). Factors predicting the subjective well-being of nations. Journal of personality and social psychology, 69(5), 851.
+.. [#] Diener, E., Diener, M., & Diener, C. (1995). Factors predicting the subjective well-being of nations. Journal of personality and social psychology, 69(5), 851.
 
-.. [2] Ladd, H. (Ed.). (2011). Holding schools accountable: Performance-based reform in education. Brookings Institution Press.
+.. [#] Ladd, H. (Ed.). (2011). Holding schools accountable: Performance-based reform in education. Brookings Institution Press.
 
-.. [3] Yu, R., Li, Q., Fischer, C., Doroudi, S., & Xu, D. (2020). Towards Accurate and Fair Prediction of College Success: Evaluating Different Sources of Student Data. International educational data mining society.
+.. [#] Yu, R., Li, Q., Fischer, C., Doroudi, S., & Xu, D. (2020). Towards Accurate and Fair Prediction of College Success: Evaluating Different Sources of Student Data. International educational data mining society.
 
-.. [4] Sewell, W. H. (1971). Inequality of opportunity for higher education. American Sociological Review, 36(5), 793-809.
+.. [#] Sewell, W. H. (1971). Inequality of opportunity for higher education. American Sociological Review, 36(5), 793-809.
