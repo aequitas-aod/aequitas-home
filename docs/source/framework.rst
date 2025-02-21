@@ -1,8 +1,9 @@
 Framework Components
-#########
+####################
 
 AI fairness in the AI system lifecycle: the holistic AEQUITAS methodology
-********************
+*************************************************************************
+
 .. toctree::
    :maxdepth: 1
 
@@ -10,6 +11,7 @@ AI fairness in the AI system lifecycle: the holistic AEQUITAS methodology
 
 AI Bias Detection
 ********************
+
 .. toctree::
    :maxdepth: 1
 
@@ -17,6 +19,7 @@ AI Bias Detection
 
 AI Bias Mitigation
 ********************
+
 .. toctree::
    :maxdepth: 1
 
@@ -24,7 +27,8 @@ AI Bias Mitigation
 
 Technology
 ********************
+
 .. toctree::
    :maxdepth: 1
 
-  technology
+   technology
