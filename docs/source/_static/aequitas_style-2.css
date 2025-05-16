@@ -223,3 +223,11 @@ ol li {
 .toctree-wrapper a:visited {
     color: #0047BB !important;
 }
+
+.label {
+    color: #fff !important;
+}
+
+a[role="doc-backlink"] {
+    color: #fff !important;
+}
