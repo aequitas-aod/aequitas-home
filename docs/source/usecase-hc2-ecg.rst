@@ -18,9 +18,13 @@ Although the general public typically only knows about the typical ECG shape as 
 
 That such relations between (changes in) ECG deflections and symptoms exist for many people is largely due to the DNA homogeneity of the human population: It has been estimated [#]_ that only 0.1% of our DNA varies. Despite that homogeneity, it has been observed that ECG morphology, for instance aspects like the duration and voltage of the QRS complex, varies between different ethnic populations [#]_ [#]_ . Similarly, there is evidence that ECG abnormalities vary between ethnic populations. For instance, in the US it was observed that people with European ancestry have a higher prevalence of atrial fibrillation [#]_  despite having lower risk factors than underrepresented ethnic groups [#]_.
 
-Based on these observations, it is clear that bias in ECG may exist, for instance due to sampling procedures, and needs to be considered when using ECG data to train (AI) algorithms. As one example, it is known that between the genders, considerable differences: women have higher mortality, more symptoms, and higher rates of recurrence after ablation procedures against atrial fibrillation. Women present differently compared to men when suffering from myocardial infarction, and their bodies react to and process medication differently than males do [#]_. Additionally, with the physiological changes in the body, it is known that ECG signals are different between the younger and older population [#]_. Moreover, also comorbidities have been shown to affect the ECG signal to some degree [#]_.
+Thus, on the one hand, the ECG and symptoms have large commonality over the human population but the ability to algorithmically detect deviations from the norm for certain subpopulations depends, on the other hand, on the availability of such data to train such an algorithm. This applies for the *monitoring* of ECG to detect these deviations from the norm as well as for *diagnostic* purposes where algorithms support clinicians in their diagnosis. This situation may result in bias in the monitoring or diagnostic algorithms.
 
-It is clear that reading and scoring of ECG is prone to various biases also affecting the diagnostic process. In the present day, such diagnostic processes are often supported by AI algorithms and we should be careful not to incorporate these biases in the training of such algorithms. For that reason, it is important for developers of algorithms for scoring and classifying ECG signals to have a diversity of data available to ensure that their algorithms can be readily used in a diverse range of scenarios without compromising on the efficacy of the algorithm to determine the correct outcome.
+For instance, it is known that between the genders, considerable differences in cardiac disease exist: women have higher mortality, more symptoms, and higher rates of recurrence after ablation procedures against atrial fibrillation. Women present differently compared to men when suffering from myocardial infarction, and their bodies react to and process medication differently than males do [#]_. When (AI) algorithms are trained on data that, for the majority, is based on measurements on males, such an algorithm may not respond properly to ECG data from women.
+
+Similarly, with the physiological changes in the body, it is known that ECG signals are different between the younger and older population [#]_ but there is a paucity of data from the younger population with a potential effect of biasing AI against younger people. Similar reasoning applies for comorbidities that have been shown to affect the ECG signal to some degree [#]_: It is difficult to capture a sufficient amount of data for all possible combinations of comorbidities and symptomatic ECG traces.
+
+It is therefore important that (AI) algorithms for monitoring of running ECG and/or diagnosis of symptomatic ECG need to be trained on well-balanced data set ensuring fair and biasfree performance for all intended larger and smaller populations of hospital patients. For that reason, it is important for developers of algorithms for scoring and classifying ECG signals to have a diversity of data available to ensure that their algorithms can be readily used in a diverse range of scenarios without compromising on the efficacy of the algorithm to determine the correct outcome.
 
 One way to deal with bias and unbalance in data is to use synthetic data to complement or replace the original data. For ECG, typically, one of three approaches is used: mathematical modeling, computer-vision techniques, or deep-learning approaches [#]_. For this use case, we have developed a confidential algorithm to generate synthetic ECG traces to support the development of AI algorithms for ECG classification in all aspects. The ECG signal generator can create healthy/normal ECGs for multiple leads and add noise to the signal from a diverse range of sources to represent real-life scenarios involving faulty or misplaced ECG leads. Beyond the normal ECGs, the algorithm can also generate symptomatic ECGs with specific configurations to create signals with a range of type and severity of the symptoms. A sample of these synthetic ECGs has been made available to interested parties in the Aequitas consortium for further analysis.
 
@@ -30,14 +34,15 @@ One way to deal with bias and unbalance in data is to use synthetic data to comp
 Goal
 ----
 
-To build a bias-aware algorithm for the classification of ECG traces as normal or symptomatic.
+To build a bias-aware algorithm for monitoring of ECG traces as normal or symptomatic.
 
 .. _hc2-method:
 
 Method
 ------
 
-We will first investigate methods that are suited to generate synthetic ECG data with or without deliberately introduced bias. Once the ECG synthetic data, with one or more deliberately introduced (additional) biases is available, the data will be used to determine whether a Philips proprietary solution is sensitive to bias. This solution evaluates ECG traces to classify, beat by beat, whether the beats are normal or affected by disease. Due to bias in the original training data these evaluations can be biased as well. To this end, PRE will use the Aequitas experimentation platform on premises to validate this use case.
+To be completed.
+
 
 .. rubric:: References
 
