@@ -37,6 +37,6 @@ Experimentation Environment
 
 .. note::
 
-    Access to the `Experimentation Environment <http://aequitas.apice.unibo.it>`
+    Access to the `Experimentation Environment <http://aequitas.apice.unibo.it>`_
 
 See a `Demo <https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/Aequitas%20-%20Experimentation%20Env%20-%20DEMO.mp4?rev=1.1>`_
