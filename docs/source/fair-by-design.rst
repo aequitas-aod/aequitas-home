@@ -37,10 +37,8 @@ Experimentation Environment
 
 .. note::
 
-    Access to the `Experimentation Environment <http://aequitas.apice.unibo.it>`_
-
+    Access to the
 .. raw:: html
-
     <a href="http://aequitas.apice.unibo.it" style="color: blue;">Experimentation Environment</a>
 
 
