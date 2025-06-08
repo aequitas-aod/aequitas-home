@@ -39,4 +39,9 @@ Experimentation Environment
 
     Access to the `Experimentation Environment <http://aequitas.apice.unibo.it>`_
 
+.. raw:: html
+
+    <a href="http://aequitas.apice.unibo.it" style="color: blue;">Experimentation Environment</a>
+
+
 See a `Demo <https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/Aequitas%20-%20Experimentation%20Env%20-%20DEMO.mp4?rev=1.1>`_
