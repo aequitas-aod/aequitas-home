@@ -231,3 +231,15 @@ ol li {
 a[role="doc-backlink"] {
     color: #fff !important;
 }
+
+/* Header blu scuro con testo bianco */
+.blue-header thead th {
+    background-color: #5265d3 !important;
+    color: white !important;
+}
+
+/* Corpo tabella blu chiaro con testo bianco */
+.blue-header tbody td {
+    background-color: #6f81ee !important;
+    color: white !important;
+}

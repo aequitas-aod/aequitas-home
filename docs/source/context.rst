@@ -1,4 +1,4 @@
-Context and background
+Purpose and Scope 
 ######################################################################
 
 General Introduction
