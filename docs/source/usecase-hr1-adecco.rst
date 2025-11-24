@@ -17,21 +17,22 @@ Known biases and unfairness
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 In the context of the Adecco Group’s use of automated recruiting software, particularly for Adecco Formazione, several biases and potential unfairness may arise. First, algorithmic bias can occur if the training data embedded in the software system is not representative of the diverse applicant pool, leading to skewed selection processes that favor certain demographics over others based on age, gender, geographic location, and educational background. Additionally, if the software disproportionately recommends candidates from specific regions or with certain educational credentials, it may inadvertently marginalize equally or more qualified candidates from other backgrounds. 
 
-
 Fair-by-Design – Fair Data Collection, Governance and Management methodology 
 ----------------------------------------------------------------------------
 The FbD methodology applied in the Adecco use case followed the same structure as in Akkodis. Through workshops coordinated by ALLAI, the recruitment dataset and the recommendation tool were assessed against the principles of the EU AI Act. The analysis confirmed similar challenges to those observed in Akkodis, including unbalanced demographic representation, risks of proxy discrimination, and the need to account for intersectional fairness, while also addressing the specific context of a commercially deployed recommender system. 
-
 
 Socio-technical analysis using IFM 
 ----------------------------------
 Introduction to IFM
 ~~~~~~~~~~~~~~~~~~~
-This use case examines a real-world recruitment process that combines human decision-making with AI-assisted tools. The process begins when a client organisation specifies its staffing needs to a recruitment firm, which prepares a job description. An AI tool supports this step by helping to structure and standardise the description. The firm then identifies potential candidates through a mix of manual sourcing and the use of an AI Matching tool. Candidates are drawn from a proprietary database, online platforms, and direct outreach. The AI Matching tool ranks database candidates based on semantic and rule-based similarity to the job profile, after which recruiters review, interview, and shortlist candidates before presenting a final selection to the client. Throughout this workflow, multiple actors—clients, recruiters, and AI systems—interact in ways that continuously transform, filter, and interpret information. This creates a complex socio-technical structure where outcomes are shaped jointly by human judgement and algorithmic recommendations, and where risks of bias and discriminatory impact can emerge at several points. 
+This use case examines a real-world recruitment process that combines human decision-making with AI-assisted tools. The process begins when a client organization specifies its staffing needs to a recruitment firm, which prepares a job description. An AI tool supports this step by helping to structure and standardize the description. The firm then identifies potential candidates through a mix of manual sourcing and the use of an AI Matching tool. Candidates are drawn from a proprietary database, online platforms, and direct outreach. The AI Matching tool ranks database candidates based on semantic and rule-based similarity to the job profile, after which recruiters review, interview, and shortlist candidates before presenting a final selection to the client. Throughout this workflow, multiple actors—clients, recruiters, and AI systems—interact in ways that continuously transform, filter, and interpret information. This creates a complex socio-technical structure where outcomes are shaped jointly by human judgement and algorithmic recommendations, and where risks of bias and discriminatory impact can emerge at several points. 
 
 IFM Model and Table 
 ~~~~~~~~~~~~~~~~~~~~~
-TO ADD
+The following figures and tables present the formalized IFM of the recruitment process at two interconnected levels of abstraction. Figure 6 gives an overview of the entire recruitment workflow, highlighting key stages from client input to final candidate selection. Table 4 details each transformation in this flow, specifying responsible actors, potential biases, and identified stakeholder impacts. The AI Match channel can be found described in greater detail in Figure 7. 
+Figure 7 zooms in on the AI Matching component—a sub-network within the broader process—showing the internal steps of feature 	extraction, matching, scoring, and ranking. Table 5 accompanies this sub-network with a breakdown of the AI transformations, the data involved, and the associated sources of bias or mitigation. 
+
+Together, these models illustrate how decision-relevant information is transformed through both human and algorithmic steps, providing the structural basis for the following bias and impact analysis. 
 
 IFM Analysis 
 ~~~~~~~~~~~~
@@ -39,15 +40,13 @@ The recruitment process at Adecco involves multiple human and algorithmic transf
 
 Bias Analysis 
 ^^^^^^^^^^^^^
-Bias analysis within the IFM is performed channel by channel, considering bias in a non-normative frame—as the possibility of deviation from intended function. This approach distinguishes bias (structural deviations) from impact (real-world harm), reducing framing traps and modeler subjectivity. At each step, the analysis asks: given the type of transformation that occurs, what could go wrong? The results of this analysis are summarised in the Bias columns of Table 1 and Table 2, alongside mitigating factors. 
+The results of this analysis are summarized in the Bias columns of Table 4 and Table 5. The analysis reveals that bias can arise in several forms across the process and then propagate downstream. 
 
-The analysis reveals that bias can arise in several forms across the process, and then propagate downstream. 
+At the earliest stage, abstraction and interpretation already create potential distortion. In channel (a), client requirements are transformed into job descriptions and technical requirements (R0 and R1) by recruiters, supported by an AI tool. The tool partly mitigates biased formulations by normalizing client language, thereby reducing the propagation of gendered terms into R0 and R1. However, the recruiter’s own understanding (R2), which informs several downstream steps, is not subject to the same mitigation. As such, recruiter interpretations may still encode implicit assumptions about candidate suitability. 
 
-At the earliest stage, abstraction and interpretation already create potential distortion. In channel (a), client requirements are transformed into job descriptions and technical requirements (R0 and R1) by recruiters, supported by an AI tool. The tool partly mitigates biased formulations by normalising client language, thereby reducing the propagation of gendered terms into R0 and R1. However, the recruiter’s own understanding (R2), which informs several downstream steps, is not subject to the same mitigation. As such, recruiter interpretations may still encode implicit assumptions about candidate suitability. 
+The AI Matching system (channel b) represents another critical site of potential bias. It transforms information through feature extraction, semantic similarity, scoring, and ranking. As shown in Table 4, these transformations carry risks of bias but also include mitigation efforts. For example, normalization of language in both candidate CVs and job requirements helps reduce gendered-language bias before semantic scoring. At the same time, additional sources of bias are introduced: for instance, the rule-based scoring algorithm includes a distance modifier that systematically reduces scores for candidates living further from the employer. 
 
-The AI Matching system (channel b) represents another critical site of potential bias. It transforms information through feature extraction, semantic similarity, scoring, and ranking. As shown in Table 2, these transformations carry risks of bias but also include mitigation efforts. For example, normalisation of language in both candidate CVs and job requirements helps reduce gendered-language bias before semantic scoring. At the same time, additional sources of bias are introduced: notably, the rule-based scoring algorithm includes a distance modifier that systematically reduces scores for candidates living further from the employer. 
-
-Transparency also emerges as a challenge. Sub-scores generated in intermediate steps (b3, b4) are not displayed to recruiters, a design decision intended to reduce confusion. Yet this opacity limits explainability and may create an “explainability bias”, where the system functions differently from the recruiter’s mental model. In such cases, intentional system use may yield unexpected outcomes because the logic is not transparent to its users.
+Transparency also emerges as a challenge. Sub-scores generated in intermediate steps (b3, b4) are not displayed to the recruiters, a design decision intended to reduce confusion. Yet this opacity limits explainability and may create an “explainability bias”, where the system functions differently from the recruiter’s mental model. In such cases, intentional system use may yield unexpected outcomes because the logic is not transparent to its users. 
 
 Impact Analysis
 ^^^^^^^^^^^^^^^
@@ -82,7 +81,7 @@ To avoid adverse effects of explainability bias, we suggest that the AI tool’s
 
 Validation reflections
 ~~~~~~~~~~~~~~~~~~~~~~
-The pre-model interviews (Step 1) proved highly effective in building the initial IFM scaffold, though some areas required clarification through follow-up questions. This highlighted the value of interviewing multiple stakeholders with overlapping domains, as subsequent sessions can then more efficiently target missing areas and revealvariability. For optimal results, we recommend at least two overlapping interviews or a verification session post-modelling. 
+The pre-model interviews (Step 1) proved highly effective in building the initial IFM scaffold, though some areas required clarification through follow-up questions. This highlighted the value of interviewing multiple stakeholders with overlapping domains, as subsequent sessions can then more efficiently target missing areas and reveal variability. For optimal results, we recommend at least two overlapping interviews or a verification session post-modelling. 
 
 The IFM modelling framework was able to represent all relevant structures encountered in this use case. The orthogonal models and the equivalence between networks and channels proved particularly useful, enabling intuitive nesting and simplification of otherwise complex relationships. 
 
@@ -96,22 +95,27 @@ Finally, feedback on the explanatory materials (graphical presentation and metho
 
 Integration into the experimentation environment
 ------------------------------------------------
-To complement the legal, ethical, and socio-technical analyses conducted through the FbD methodology and the IFM modelling, the Adecco use case was tested in the AEQUITAS Experimentation Environment. This phase aimed to translate the risks identified in the workshops—particularly those relating to gender, age, and geographic provenance—into measurable outcomes, using fairness metrics and algorithmic mitigation techniques. 
+To complement the legal, ethical, and socio-technical analyses conducted through the FbD methodology and the IFM modelling, the Adecco use case was tested in the AEQUITAS Controlled Experimentation Environment. This phase aimed to translate the risks identified in the workshops—particularly those relating to gender, age, and geographic provenance—into measurable outcomes, using fairness metrics and algorithmic mitigation techniques. 
 
 In line with the Akkodis case, the following fairness metrics were applied: Statistical Parity Difference, Disparate Impact, Equalized Odds Ratio, and Demographic Parity Ratio. These metrics were computed before and after mitigation to capture both the extent of algorithmic bias and the effectiveness of corrective strategies. 
 
-The experimentation directly operationalised findings from the FbD analysis (dataset imbalance, proxy risks) and the IFM socio-technical model (bias introduction in recruiter interpretation, geographic scoring adjustments). Sensitive attributes flagged upstream—particularly sex and age buckets—were included as fairness dimensions in the experimental evaluation 
+The experimentation directly operationalized findings from the FbD analysis (dataset imbalance, proxy risks) and the IFM socio-technical model (bias introduction in recruiter interpretation, geographic scoring adjustments). Sensitive attributes flagged upstream —particularly sex and age buckets— were included as fairness dimensions in the experimental evaluation. 
 
 Mitigations
 ~~~~~~~~~~~
 Three mitigation strategies were trialled:
+
 * Correlation Remover (pre-processing) to address structural correlations between sensitive attributes and other features.
+
 * Prejudice Remover (in-processing) to penalise biased outcomes during training.
+
 * Adversarial Debiasing (in-processing) to learn fair representations by jointly optimising predictive accuracy and fairness objectives
 
 Results
 ~~~~~~~
-The experiments confirmed that Adversarial Debiasing consistently delivered the best trade-off between fairness improvement and model performance. As shown in the performance plots (page 12 of the report), accuracy and precision remained stable after mitigation, while fairness metrics such as Demographic Parity Difference and Equalized Odds Difference improved significantly (see fairness plots on page 13 in the Annex). Stress testing with synthetic polarized datasets (pages 17 and 22 in the Annex) further validated this result. Under conditions of extreme demographic imbalance, Adversarial Debiasing maintained higher fairness levels than alternative methods, although performance declined when minority groups became too underrepresented—a finding that echoes the IFM insight that location- and provenance-related disadvantages cannot be fully corrected at algorithmic level without upstream data governance interventions. 
+The experiments confirmed that Adversarial Debiasing consistently delivered the best trade-off between fairness improvement and model performance. As shown in the performance plots,15 accuracy and precision remained stable after mitigation, while fairness metrics such as Demographic Parity Difference and Equalized Odds Difference improved significantly.16 
+
+Stress testing with synthetic polarized datasets17 further validated this result. Under conditions of extreme demographic imbalance, Adversarial Debiasing maintained higher fairness levels than alternative methods, although performance declined when minority groups became too underrepresented —a finding that echoes the IFM insight that location- and provenance-related disadvantages cannot be fully corrected at algorithmic level without upstream data governance interventions. 
 
 Key Outcomes
 ~~~~~~~~~~~~
@@ -123,12 +127,13 @@ Key Outcomes
 
 * Stress tests demonstrated both the robustness and the limits of mitigation: fairness algorithms improve outcomes substantially, but extreme imbalances still require data-level interventions. 
 
-In summary, the experimentation phase showed that fairness-aware algorithmic interventions can operationalise the normative and socio-technical findings of the Adecco use case. Among the tested approaches, Adversarial Debiasing proved to be the most reliable, offering a practical pathway for Adecco to integrate fairness into its recruitment recommender systems.
-
+In summary, the experimentation phase showed that fairness-aware algorithmic interventions can operationalize the normative and socio-technical findings of the Adecco use case. Among the tested approaches, Adversarial Debiasing proved to be the most reliable, offering a practical pathway for Adecco to integrate fairness into its recruitment recommender systems. 
 
 Use of synthetic data
 ---------------------
-Synthetic data were employed to stress test the robustness of the mitigation strategies, with a focus on Adversarial Debiasing, which had emerged as the most effective approach. By deliberately polarising subgroup distributions and simulating extreme imbalances, the experiments helped identify the breaking points of the model. Results confirmed that while Adversarial Debiasing substantially improved fairness under realistic conditions, its effectiveness diminished in scenarios of extreme underrepresentation—reinforcing the conclusion from the FbD and IFM analyses that data-level governance and representativeness remain indispensable alongside algorithmic mitigation. 
+Synthetic data were employed to stress test the robustness of the mitigation strategies, with a focus on Adversarial Debiasing, which had emerged as the most effective approach. By deliberately polarizing subgroup distributions and simulating extreme imbalances, the experiments helped identify the breaking points of the model.  
+
+Results confirmed that while Adversarial Debiasing substantially improved fairness under realistic conditions, its effectiveness diminished in scenarios of extreme underrepresentation —reinforcing the conclusion from the FbD and IFM analyses that data-level governance and representativeness remain indispensable alongside algorithmic mitigation. 
 
 Assessment Alternative Assessment: CV Screening & Keyword Matching
 ------------------------------------------------------------------
@@ -173,9 +178,9 @@ Key Findings & Results
 ~~~~~~~~~~~~~~~~~~~~~~
 From the published results: 
 
-* Gendered term asymmetry: Words such as “nurse,” “engineer,” or domain-specific gendered terms are unevenly distributed across CVs and job postings, producing semantic mismatches that systematically disadvantage certain genders. 
+* Term asymmetry: Words such as “nurse,” “engineer,” or domain-specific terms have gendered associations and connotations that are unevenly distributed across CVs and job postings, producing semantic mismatches that systematically disadvantage certain genders. 
 
-* Stereotypical associations: The model tends to favor candidates whose CVs contain more “neutral” or historically male-leaning language, reinforcing existing biases in how professions are linguistically framed. 
+* Stereotypical associations: The model tends to favor candidates whose CVs contain more “neutral” or historically male-leaning language, reinforcing existing biases in how professions are linguistically framed
 
 * Similarity scoring bias: Candidates whose CVs conform more closely to canonical templates (e.g. highly structured language) often receive stronger similarity scores, while those with less conventional or varied wording may be penalized. 
 
@@ -183,7 +188,7 @@ From the published results:
 
 * Trade-offs and limits: The mitigation does not completely equalize outcomes, especially in subgroups with fewer samples. Some bias remains in edge cases or underrepresented classes. 
 
-These findings indicate that LLM-based CV processing can introduce or magnify biases through latent linguistic associations, but also that targeted neutralization techniques can partially alleviate them. 
+These findings indicate that **LLM-based CV processing can introduce or magnify biases through latent linguistic associations**, but also that targeted neutralization techniques can alleviate them albeit only partially. 
 
 Limitations & Future Directions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -199,13 +204,13 @@ Some caveats to consider:
 
 Learnings
 ---------
-The Adecco use case provided the opportunity to validate the AEQUITAS framework on two distinct but complementary fronts: a structured recruitment dataset processed through traditional ML pipelines, and a LLM-based CV screening tool used to extract and match candidate information. Together, these exercises enabled a comprehensive evaluation of fairness risks in both conventional AI and emerging NLP/GenAI systems. 
+The Adecco use case provided the opportunity to validate the AEQUITAS framework on two distinct but complementary fronts: a structured recruitment dataset processed through traditional ML pipelines, and an LLM-based CV screening tool used to extract and match candidate information. Together, these exercises enabled a comprehensive evaluation of fairness risks in both conventional AI and emerging NLP/GenAI systems. 
 
 From the first experiment, focused on structured data, the analysis confirmed that imbalanced representation of sensitive attributes (gender, age, geographic provenance) and proxy features (e.g., location, education) significantly affect recruitment outcomes. The experimentation phase demonstrated that while several mitigation strategies improved fairness, Adversarial Debiasing emerged as the most effective, achieving a stable balance between fairness gains and predictive performance. Stress tests with synthetic data highlighted, however, that no algorithm can fully compensate for extreme underrepresentation, reinforcing the need for robust data governance and collection practices. 
 
-The second experiment, centred on the LLM-based CV screening tool, revealed that linguistic asymmetries and stereotypical associations can skew candidate–job matching. Gendered terms and conformity to conventional CV formats were shown to systematically influence similarity scores. Mitigation strategies such as neutralising gendered tokens and normalising keyword distributions reduced disparities but did not eliminate them entirely. This underscored the risk that modern NLP components may replicate or even amplify structural inequalities if not carefully monitored. 
+The second experiment, centered on the LLM-based CV screening tool, revealed that linguistic asymmetries and stereotypical associations can skew candidate–job matching. Gendered terms and conformity to conventional CV formats were shown to systematically influence similarity scores. Mitigation strategies such as neutralizing gendered tokens and normalizing keyword distributions reduced disparities but did not eliminate them entirely. This underscored the risk that modern NLP components may replicate or even amplify structural inequalities if not carefully monitored. 
 
-The unified outcome of these exercises is the validation of the AEQUITAS methodology across different technological paradigms. The same Fair-by-Design and IFM principles that guided the structured data analysis also proved applicable to a generative/NLP setting, confirming the generality and adaptability of the framework. Moreover, the experimentation environment successfully operationalised fairness concerns into measurable metrics across both contexts, demonstrating that AEQUITAS can serve as a pre-regulatory instrument for diverse AI technologies. 
+The unified outcome of these exercises is the validation of the AEQUITAS methodology across different technological paradigms. The same Fair-by-Design and IFM principles that guided the structured data analysis also proved applicable to a generative/NLP setting, confirming the generality and adaptability of the framework. Moreover, the controlled experimentation environment successfully operationalized fairness concerns into measurable metrics across both contexts, demonstrating that AEQUITAS can serve as a pre-regulatory instrument for diverse AI technologies. 
 
 For Adecco, the overall learning is twofold. First, fairness-aware AI in recruitment requires a dual focus: strong dataset governance combined with algorithmic mitigation. Second, the methodology must extend to modern language technologies, where fairness risks emerge not only from data imbalance but also from linguistic representation and model opacity. By validating AEQUITAS on both fronts, Adecco has gained practical evidence that fairness can be systematically embedded in recruitment technologies—traditional and generative alike—thus aligning future development with both ethical standards and regulatory requirements. 
 
