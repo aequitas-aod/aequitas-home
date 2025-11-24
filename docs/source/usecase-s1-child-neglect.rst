@@ -2,7 +2,7 @@
 
 Introduction and background
 ---------------------------
-The Child Neglect use case addresses one of the most ethically and socially sensitive domains of AI: the identification of children potentially exposed to abuse or neglect. The overarching goal was to investigate whether AI could responsibly assist medical professionals in detecting patterns indicative of child abuse without replacing or undermining clinical judgment. Early in the analysis, AEQUITAS’ Zero-Question Methodology39 —which asks whether AI should be used at all— revealed that the available hospital dataset, despite containing valuable diagnostic information (notably the “NAP – Neglect and Abuse Pediatric” flag), was statistically limited and ethically sensitive.  
+The Child Neglect use case addresses one of the most ethically and socially sensitive domains of AI: the identification of children potentially exposed to abuse or neglect. The overarching goal was to investigate whether AI could responsibly assist medical professionals in detecting patterns indicative of child abuse without replacing or undermining clinical judgment. Early in the analysis, AEQUITAS’ Zero-Question Methodology [1]_ —which asks whether AI should be used at all— revealed that the available hospital dataset, despite containing valuable diagnostic information (notably the “NAP – Neglect and Abuse Pediatric” flag), was statistically limited and ethically sensitive.  
 
 Rather than pursuing predictive classification, the project pivoted toward AI-supported knowledge extraction and decision support, using LLMs to derive structured rules from clinical manuals. These manuals describe symptoms, injury patterns, and professional protocols for handling suspected cases of maltreatment. The extracted rules were subsequently validated and compiled into a five-question digital checklist (NAP Checklist) designed to guide emergency doctors in recognizing early warning signs of abuse.  
 
@@ -118,3 +118,7 @@ The experimentation phase translated these conceptual insights into practical va
 The ethical implications of these findings are significant. The project showed that fairness in child protection is not about equalizing algorithmic outputs, but about **ensuring just, transparent, and proportionate decision support that respects the vulnerability of the affected individuals**. It also demonstrated that fairness must be designed into the purpose and function of the system, transforming AI from a predictive or punitive instrument into a trustworthy clinical assistant. 
 
 In conclusion, the use case proved that AEQUITAS can deliver fairness assurance for AI systems operating in ethically complex environments, where the stakes involve not only performance but also fundamental human rights. The project established a replicable blueprint for developing AI tools that are compliant by design, explainable by construction, and ethically defensible in deployment. It also demonstrated that the fair and trustworthy use of AI in child protection is possible provided that technology remains firmly anchored in human judgment, social context, and respect for human dignity. 
+
+.. rubric:: References
+
+.. [1] Deliverable 6.4, Annex I.

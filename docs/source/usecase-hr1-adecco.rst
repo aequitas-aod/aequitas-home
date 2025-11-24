@@ -11,6 +11,7 @@ Following this, the shortlisted candidates are personally evaluated by the recru
 Additionally, the software provides access to a dataset composed of anonymized data, collected over a specific period (e.g., a snapshot of a single day’s operation). This dataset includes the matches proposed by the software, enriched with candidates’ information such as age, gender, geographic location, education, and the specific job positions requirements. 
 
 The aim of this case study is to target the cognitive and structural bias that might be associated with existing assisted hiring systems. The analysis of the tool will make it possible to detect and assess possible biased outcomes resulting from the algorithm/software and the human expert in the selection of candidates. 
+
 .. _hr1-known:
 
 Known biases and unfairness  
@@ -30,8 +31,32 @@ This use case examines a real-world recruitment process that combines human deci
 IFM Model and Table 
 ~~~~~~~~~~~~~~~~~~~~~
 The following figures and tables present the formalized IFM of the recruitment process at two interconnected levels of abstraction. Figure 6 gives an overview of the entire recruitment workflow, highlighting key stages from client input to final candidate selection. Table 4 details each transformation in this flow, specifying responsible actors, potential biases, and identified stakeholder impacts. The AI Match channel can be found described in greater detail in Figure 7. 
-Figure 7 zooms in on the AI Matching component—a sub-network within the broader process—showing the internal steps of feature 	extraction, matching, scoring, and ranking. Table 5 accompanies this sub-network with a breakdown of the AI transformations, the data involved, and the associated sources of bias or mitigation. 
 
+.. figure:: img/HR1_Figure6.png
+  :width: 600
+  :alt: Figure 6. FM Overview of the Adecco recruitment process.  In the green dashed box the top-level client-process can be seen. Outsourced arrow gives the larger image containing the orthogonally connected Sourcing and Screening IFM models. 
+  
+  Figure 6. FM Overview of the Adecco recruitment process. In the green dashed box the top-level client-process can be seen. The “Outsourced” arrow points to the larger image containing the orthogonally connected Sourcing and Screening IFM models.
+
+.. figure:: img/HR1_Tab4.png
+  :width: 600
+  :alt:  Table 4. Description of channels (a)-(h) in Figure 6
+
+  Table 4. Description of channels (a)-(h) in Figure 6
+
+.. figure:: img/HR1_Figure7.png
+  :width: 600
+  :alt:  Figure 7. This figure shows a more detailed IFM of the AI Matching channel.  
+
+  Figure 7. This figure shows a more detailed IFM of the AI Matching channel. 
+
+.. figure:: img/HR1_Tab5.png
+  :width: 600
+  :alt:  Table 5. Details on channels (b1)-(b7) in Figure 7
+
+  Table 5. Details on channels (b1)-(b7) in Figure 7
+
+Figure 7 zooms in on the AI Matching component—a sub-network within the broader process—showing the internal steps of feature 	extraction, matching, scoring, and ranking. Table 5 accompanies this sub-network with a breakdown of the AI transformations, the data involved, and the associated sources of bias or mitigation. 
 Together, these models illustrate how decision-relevant information is transformed through both human and algorithmic steps, providing the structural basis for the following bias and impact analysis. 
 
 IFM Analysis 
@@ -113,9 +138,9 @@ Three mitigation strategies were trialled:
 
 Results
 ~~~~~~~
-The experiments confirmed that Adversarial Debiasing consistently delivered the best trade-off between fairness improvement and model performance. As shown in the performance plots,15 accuracy and precision remained stable after mitigation, while fairness metrics such as Demographic Parity Difference and Equalized Odds Difference improved significantly.16 
+The experiments confirmed that Adversarial Debiasing consistently delivered the best trade-off between fairness improvement and model performance. As shown in the performance plots, [1]_ accuracy and precision remained stable after mitigation, while fairness metrics such as Demographic Parity Difference and Equalized Odds Difference improved significantly. [2]_ 
 
-Stress testing with synthetic polarized datasets17 further validated this result. Under conditions of extreme demographic imbalance, Adversarial Debiasing maintained higher fairness levels than alternative methods, although performance declined when minority groups became too underrepresented —a finding that echoes the IFM insight that location- and provenance-related disadvantages cannot be fully corrected at algorithmic level without upstream data governance interventions. 
+Stress testing with synthetic polarized datasets [3]_ further validated this result. Under conditions of extreme demographic imbalance, Adversarial Debiasing maintained higher fairness levels than alternative methods, although performance declined when minority groups became too underrepresented —a finding that echoes the IFM insight that location- and provenance-related disadvantages cannot be fully corrected at algorithmic level without upstream data governance interventions. 
 
 Key Outcomes
 ~~~~~~~~~~~~
@@ -225,3 +250,11 @@ In the following sections we show a list of preliminary experiments (on various 
 * `Bias Detection <https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/ADECCO_Bias_Detection.pdf>`_
 
 * `Bias Mitigation <https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/ADECCO_Bias_Mitigation.pdf>`_
+
+.. rubric:: References
+
+.. [1] See page 15 of the Experimenter report.
+
+.. [2] See page 16 of the Experimenter report.
+
+.. [3] Pages 24 and 32 of the Experimenter report.

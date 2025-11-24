@@ -2,15 +2,15 @@
 
 Introduction and background
 ---------------------------
-There are many areas where AI can assist dermatological experts, such as computer-aided detection/diagnosis, disease prediction, image segmentation, etc.20 The most successful AI applications to dermatology involve processing images and making automated decisions based on images of skin patches, e.g., distinguishing between images portraying healthy skin from images containing dermatological conditions21. Dermatology is among the areas which can benefit from data-driven models, as the first step of identifying skin diseases typically consists of visual inspection (possibly followed by further analyses) and AI approaches are well-suited to classify images —if provided with sufficient training data. 
+There are many areas where AI can assist dermatological experts, such as computer-aided detection/diagnosis, disease prediction, image segmentation, etc. [1]_ The most successful AI applications to dermatology involve processing images and making automated decisions based on images of skin patches, e.g., distinguishing between images portraying healthy skin from images containing dermatological conditions [2]_. Dermatology is among the areas which can benefit from data-driven models, as the first step of identifying skin diseases typically consists of visual inspection (possibly followed by further analyses) and AI approaches are well-suited to classify images —if provided with sufficient training data. 
 
-One of the greatest success stories of AI is image classification and image manipulation, in particular through data-driven approaches such as ML and Deep Learning (DL)22. Computer vision boosted by DL has been employed in a variety of medical contexts, including dermatology, covering several tasks from disease classification using clinical images to disease classification using dermatopathology images23,24,25. One of the biggest limitations of the widespread adoption of DL techniques is their data-hungry nature. Generally speaking, DL models base their success on the availability of large, annotated data sets, e.g., thousands of different images containing various examples of healthy skin and dermatological diseases. 
+One of the greatest success stories of AI is image classification and image manipulation, in particular through data-driven approaches such as ML and Deep Learning (DL) [3]_. Computer vision boosted by DL has been employed in a variety of medical contexts, including dermatology, covering several tasks from disease classification using clinical images to disease classification using dermatopathology images [4]_, [5]_, [6]_. One of the biggest limitations of the widespread adoption of DL techniques is their data-hungry nature. Generally speaking, DL models base their success on the availability of large, annotated data sets, e.g., thousands of different images containing various examples of healthy skin and dermatological diseases. 
 
-AI can also come to the rescue to remove this obstacle, as in recent years, great strides have been made toward synthetic medical image generation through DL approaches,26,27 in particular using DL models such as Variational Autoencoders (VAEs), Generative Adversarial Networks (GANs) and Diffusion Models28. However, the majority of these data augmentation techniques —with few exceptions29,30— do not target skin images, but rather focus on MR images, PET, CT scans, radiography, etc.31 Instead, synthetic generation of clinical skin images with pathology aims at generating realistic and diverse images depicting various skin conditions and pathological patterns.32,33 The goal is to capture the complexity and visual characteristics of different skin conditions, including dermatological diseases, lesions, and abnormalities34. 
+AI can also come to the rescue to remove this obstacle, as in recent years, great strides have been made toward synthetic medical image generation through DL approaches, [7]_ , [8]_ in particular using DL models such as Variational Autoencoders (VAEs), Generative Adversarial Networks (GANs) and Diffusion Models [9]_ . However, the majority of these data augmentation techniques —with few exceptions [10]_ , [11]_ — do not target skin images, but rather focus on MR images, PET, CT scans, radiography, etc. [12]_ Instead, synthetic generation of clinical skin images with pathology aims at generating realistic and diverse images depicting various skin conditions and pathological patterns. [13]_ , [14]_ The goal is to capture the complexity and visual characteristics of different skin conditions, including dermatological diseases, lesions, and abnormalities [15]_. 
 
 To achieve this, researchers employ various strategies, including the incorporation of domain knowledge, data augmentation techniques, and conditioning methods that guide the generation process based on additional information or attributes. Existing approaches in the field have predominantly relied on the utilization of GANs or VAEs. These methods have proven to be effective in generating high-quality samples and learning latent representations. However, they tend to require several thousand training images to learn the features of skin with and without pathological conditions.  
 
-For the present use case, however, we are dealing with a scarce data set of only a few hundred images taken from a public hospital in Italy (IRCCS Azienda Ospedaliero Universitaria Di Bologna). To circumvent the data scarcity, we propose to generate realistic skin images with a diffusion model35. To the best of our knowledge, there are very few approaches in the literature that employ diffusion models in this context and demonstrate their suitability even with a very small training set. The code used to implement the approach and run the experiments is publicly available.36  
+For the present use case, however, we are dealing with a scarce data set of only a few hundred images taken from a public hospital in Italy (IRCCS Azienda Ospedaliero Universitaria Di Bologna). To circumvent the data scarcity, we propose to generate realistic skin images with a diffusion model [16]_ . To the best of our knowledge, there are very few approaches in the literature that employ diffusion models in this context and demonstrate their suitability even with a very small training set. The code used to implement the approach and run the experiments is publicly available. [17]_  
 
 The goal of this use case is to develop a synthetic image generator that can generate synthetic images of skin with pathologies in a way that captures the complexity and visual characteristics of different skin conditions, including dermatological disease, lesions, and abnormalities. As in the previous chapters, we will do the development work using the guard rails created by using the FMM and the IFM methodologies. 
 
@@ -25,7 +25,7 @@ The Fair Model Methodology (FMM) is grounded in the EU AI Act’s high-risk requ
 
 * **Process Audits**: evaluating the extent fairness principles and values are included in the process shaping the design, development, and use of the AI system. This audit entails a risk evaluation of Fundamental Rights and of social/societal impacts. 
 
-The methodology was tested in a workshop using the AEQUITAS use case of an AI-assisted system for the identification of dermatological diseases in pediatric patients. The system is based on a transformer model trained on approximately 300 images of children with dermatological conditions, aiming to support more equitable diagnosis and reduce bias in clinical settings. A summary of the key findings and methodological validation can be found in the following sections37. The full report can be found in Appendix C.1 
+The methodology was tested in a workshop using the AEQUITAS use case of an AI-assisted system for the identification of dermatological diseases in pediatric patients. The system is based on a transformer model trained on approximately 300 images of children with dermatological conditions, aiming to support more equitable diagnosis and reduce bias in clinical settings. A summary of the key findings and methodological validation can be found in the following sections [18]_. The full report can be found in Appendix C.1 
 
 Key Findings
 ~~~~~~~~~~~~
@@ -79,8 +79,59 @@ Because this tool is still in the exploratory phase, the scope of the IFM analys
 
 * **Concept (C)**: The resulting diagnosis or description of the patient’s condition. 
 
+.. figure:: img/HC1_Tab7.png
+  :width: 600
+  :alt:  Table 7. Overview of symbols in the IFM analysis of the dermatology use case.   
+
+  Table 7. Overview of symbols in the IFM analysis of the dermatology use case.  
+
+We consider the following stages in the diagnostic journey as IFM networks: 
+
+**Awareness**: The child notices discomfort or symptoms. 
+
+.. image:: img/HC1_Awareness.png
+  :width: 200
+  :alt: Awareness
+
+**Perception**: The child creates a perception of the dermatological condition 
+
+.. image:: img/HC1_Perception.png
+  :width: 200
+  :alt: Perception
+
+**Image Capture**: A photo of the affected area is taken. 
+
+.. image:: img/HC1_Imagecapture.png
+  :width: 200
+  :alt: Image Capture
+
+**AI Assessment**: The image is analyzed by the AI tool. 
+
+.. image:: img/HC1_AIassessment.png
+  :width: 200
+  :alt: AI Assessment
+ 
+**Family Doctor Visit**: The child and/or guardian(s) consult their family doctor. 
+
+.. image:: img/HC1_Familydoctorvisit.png
+  :width: 200
+  :alt: Family Doctor Visit
+
+**Specialist Visit**: The child and/or guardian(s) consult a dermatology specialist. 
+
+.. image:: img/HC1_SpecialistVisit.png
+  :width: 200
+  :alt: Specialist Visit
+
+We use the defined networks to reconstruct the following scenarios and map the impacts. 
+
 Scenario 1: Child-Led & Guardians AI Use 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image:: img/HC1_Scenario1.png
+  :width: 600
+  :alt: Scenario1
+
 * **Awareness & Decision to Act**: 
 
     * The child and/or guardians recognize skin discomfort and decide whether to pursue further investigation. 
@@ -109,6 +160,11 @@ Scenario 1: Child-Led & Guardians AI Use
 
 Follow-Up IFM for True Positives (TP) and False Positives (FP) 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. image:: img/HC1_Followup.png
+  :width: 600
+  :alt: Followup
+
 When a TP or FP alert occurs, our expectation is that the patient will consult their family doctor. Unlike the current workflow, the doctor now has the AI’s signal as additional information. Depending on the doctor’s trust in the AI system and their own diagnostic style, this signal can lead to: 
 
 * **Automation bias**: Overreliance on the AI alert, leading to unnecessary referrals or treatments in FP cases. 
@@ -219,7 +275,7 @@ The fairness and performance metrics from these tests are summarized below:
 
 * In the Balanced Scenario, fairness metrics markedly improved: DI approached parity (0.9–1.0) and SPD values converged toward zero, while Equalized Odds Ratio (EOR) demonstrated that error rates across skin tones became substantially aligned   
 
-Importantly, overall model accuracy and F1-score remained stable across both scenarios,38 proving that the fairness gains did not compromise predictive performance. 
+Importantly, overall model accuracy and F1-score remained stable across both scenarios, [19]_ proving that the fairness gains did not compromise predictive performance. 
 
 Interpretation and Methodological Links
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -273,18 +329,22 @@ In the following sections we show a list of preliminary experiments (on various 
 
 .. rubric:: References
 
-.. [1] Barhoumi,W.,Khelifa,A.:Skinlesionimageretrievalusingtransferlearning-based approach for query-driven distance recommendation. Computers in Biology and Medicine 137, 104,825 (2021)
-.. [2] Bhadula, S., Sharma, S., Juyal, P., Kulshrestha, C.: Machine learning algorithms based skin disease detection. International Journal of Innovative Technology and Exploring Engineering (IJITEE) 9(2), 4044–4049 (2019)
-.. [3] Brinker, T.J., Hekler, A., Utikal, J.S., Grabe, N., Schadendorf, D., Klode, J., Berk- ing, C., Steeb, T., Enk, A.H., Von Kalle, C.: Skin cancer classification using convolutional neural networks: systematic review. Journal of medical Internet research 20(10), e11,936 (2018)
-.. [4] Chai, J., Zeng, H., Li, A., Ngai, E.W.: Deep learning in computer vision: A critical review of emerging techniques and application scenarios. Machine Learning with Applications 6, 100,134 (2021)
+.. [1] Kim, M., Yun, J., Cho, Y., Shin, K., Jang, R., Bae, H.j., Kim, N.: Deep learning in medical imaging. Neurospine 16(4), 657 (2019)
+.. [2] Wells, A., Patel, S., Lee, J.B., Motaparthi, K.: Artificial intelligence in dermatopathology: Diagnosis, education, and research. Journal of Cutaneous Pathology 48(8), 1061–1068 (2021)
+.. [3] Chai, J., Zeng, H., Li, A., Ngai, E.W.: Deep learning in computer vision: A critical review of emerging techniques and application scenarios. Machine Learning with Applications 6, 100,134 (2021)
+.. [4] Brinker, T.J., Hekler, A., Utikal, J.S., Grabe, N., Schadendorf, D., Klode, J., Berk- ing, C., Steeb, T., Enk, A.H., Von Kalle, C.: Skin cancer classification using convolutional neural networks: systematic review. Journal of medical Internet research 20(10), e11,936 (2018)
 .. [5] Chan, S., Reddy, V., Myers, B., Thibodeaux, Q., Brownstone, N., Liao, W.: Ma- chine learning in dermatology: current applications, opportunities, and limitations. Dermatology and therapy 10, 365–386 (2020)
-.. [7] Chlap, P., Min, H., Vandenberg, N., Dowling, J., Holloway, L., Haworth, A.: A review of medical image data augmentation techniques for deep learning applications. Journal of Medical Imaging and Radiation Oncology 65(5), 545–563 (2021)
-.. [9] Ghorbani, A., Natarajan, V., Coz, D., Liu, Y.: Dermgan: Synthetic generation of clinical skin images with pathology (2019)
-.. [10] Göç̧eri, E.: Convolutional neural network based desktop applications to classify dermatological diseases. In: 2020 IEEE 4th International Conference on Image Processing, Applications and Systems (IPAS), pp. 138–143. IEEE (2020)
-.. [15] Jaworek-Korjakowska, J., Yap, M.H., Bhattacharjee, D., Kleczek, P., Brodzicki, A., Gorgon, M.: Deep neural networks and advanced computer vision algorithms in the early diagnosis of skin diseases. In: State of the Art in Neural Networks and Their Applications, pp. 47–81. Elsevier (2023)
-.. [17] Kebaili, A., Lapuyade-Lahorgue, J., Ruan, S.: Deep learning approaches for data augmentation in medical imaging: A review. Journal of Imaging 9(4), 81 (2023)
-.. [18] Kim, M., Yun, J., Cho, Y., Shin, K., Jang, R., Bae, H.j., Kim, N.: Deep learning in medical imaging. Neurospine 16(4), 657 (2019)
-.. [20] Li, Z., Koban, K.C., Schenck, T.L., Giunta, R.E., Li, Q., Sun, Y.: Artificial intelligence in dermatology image analysis: current developments and future trends. Journal of Clinical Medicine 11(22), 6826 (2022)
-.. [26] Thambawita, V., Salehi, P., Sheshkal, S.A., Hicks, S.A., Hammer, H.L., Parasa, S., Lange, T.d., Halvorsen, P., Riegler, M.A.: Singan-seg: Synthetic training data generation for medical image segmentation. PloS one 17(5), e0267,976 (2022)
-.. [28] Wells, A., Patel, S., Lee, J.B., Motaparthi, K.: Artificial intelligence in dermatopathology: Diagnosis, education, and research. Journal of Cutaneous Pathology 48(8), 1061–1068 (2021)
-.. [29] Wen,Y.,Chen,L.,Deng,Y.,Zhou,C.:Rethinkingpre-trainingonmedicalimaging. Journal of Visual Communication and Image Representation 78, 103,145 (2021)
+.. [6] Göç̧eri, E.: Convolutional neural network based desktop applications to classify dermatological diseases. In: 2020 IEEE 4th International Conference on Image Processing, Applications and Systems (IPAS), pp. 138–143. IEEE (2020)
+.. [7] Wen,Y.,Chen,L.,Deng,Y.,Zhou,C.:Rethinkingpre-trainingonmedicalimaging. Journal of Visual Communication and Image Representation 78, 103,145 (2021)
+.. [8] Thambawita, V., Salehi, P., Sheshkal, S.A., Hicks, S.A., Hammer, H.L., Parasa, S., Lange, T.d., Halvorsen, P., Riegler, M.A.: Singan-seg: Synthetic training data generation for medical image segmentation. PloS one 17(5), e0267,976 (2022)
+.. [9] Chlap, P., Min, H., Vandenberg, N., Dowling, J., Holloway, L., Haworth, A.: A review of medical image data augmentation techniques for deep learning applications. Journal of Medical Imaging and Radiation Oncology 65(5), 545–563 (2021)
+.. [10] Bhadula, S., Sharma, S., Juyal, P., Kulshrestha, C.: Machine learning algorithms based skin disease detection. International Journal of Innovative Technology and Exploring Engineering (IJITEE) 9(2), 4044–4049 (2019)
+.. [11] Ghorbani, A., Natarajan, V., Coz, D., Liu, Y.: Dermgan: Synthetic generation of clinical skin images with pathology (2019)
+.. [12] Kebaili, A., Lapuyade-Lahorgue, J., Ruan, S.: Deep learning approaches for data augmentation in medical imaging: A review. Journal of Imaging 9(4), 81 (2023)
+.. [13] Jaworek-Korjakowska, J., Yap, M.H., Bhattacharjee, D., Kleczek, P., Brodzicki, A., Gorgon, M.: Deep neural networks and advanced computer vision algorithms in the early diagnosis of skin diseases. In: State of the Art in Neural Networks and Their Applications, pp. 47–81. Elsevier (2023)
+.. [14] Li, Z., Koban, K.C., Schenck, T.L., Giunta, R.E., Li, Q., Sun, Y.: Artificial intelligence in dermatology image analysis: current developments and future trends. Journal of Clinical Medicine 11(22), 6826 (2022)
+.. [15] Barhoumi,W.,Khelifa,A.:Skinlesionimageretrievalusingtransferlearning-based approach for query-driven distance recommendation. Computers in Biology and Medicine 137, 104,825 (2021)
+.. [16] Borghesi, A., Calegari, R. (2024). Generation of Clinical Skin Images with Pathology with Scarce Data. In: Shaban-Nejad, A., Michalowski, M., Bianco, S. (eds) AI for Health Equity and Fairness. Studies in Computational Intelligence, vol 1164. Springer, Cham. https://doi.org/10.1007/978-3-031-63592-2_5. 
+.. [17] https://github.com/aequitas-aod/experiment-gen-skin-images. 
+.. [18] Unfortunately, due to time constraints, the FMM was only partially applied to the use case. 
+.. [19] See p11-12 of the Experimenter report.

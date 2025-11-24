@@ -96,7 +96,7 @@ Fair-by-Design – Fair Data Collection, Governance and Management methodology
 Methodology Overview
 ~~~~~~~~~~~~~~~~~~~~
 
-The TAIRA framework is a 7-step methodology to evaluate whether an AI system should be developed and whether it is trustworthy. It aims to answer “question zero” in AI: not only how, but if AI should be used. TAIRA is applied in the early scoping phase of the AI lifecycle and integrates ethical, legal, and socio-technical perspectives. 
+The TAIRA framework is a 7-step methodology to evaluate whether an AI system should be developed and whether it is trustworthy. It aims to answer “question zero” in AI: not only how, but if AI should be used [1]_ . TAIRA is applied in the early scoping phase of the AI lifecycle and integrates ethical, legal, and socio-technical perspectives. 
 
 The steps include: 
 
@@ -203,6 +203,12 @@ To model how an AI-driven tool and additional system biases might affect stakeho
 
 IFM model of current decision-making process 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. figure:: img/S2_Figure8.png
+  :width: 600
+  :alt:  Figure 8. Current decision-making process in the S2 disadvantaged students use case. 
+
+  Figure 8. Current decision-making process in the S2 disadvantaged students use case. 
+
 Figure 8 illustrates the current decision-making process. “DM” (Decision Maker) is a broad label for anyone responsible for choosing or authorizing an intervention; we use it to reflect uncertainty about specific roles. Within this category, we distinguish: 
 
 * **Direct-contact DMs** (e.g., teachers, tutors, counselors) who interact personally with the student. 
@@ -233,6 +239,12 @@ IFM model of prospective situation involving AI
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 This scenario is based on the development of an AI system that aims to forecast future academic performance based on data from the grade-3 cohort. This approach enables identifying students in need for additional support like remedial teaching or enrichment. Figure 9 illustrates the AI-training pipeline designed by the development team. As mentioned before, the longitudinal ACCUEE dataset —spanning the 2015–16 through 2018–19 cohorts and including more than 83,000 student-grade observations (grades 3 & 6 of primary and grade 4 of secondary, i.e. 10th grade in K–12)— forms the basis of the workflow.  
 
+.. figure:: img/S2_Figure9.png
+  :width: 600
+  :alt:  Figure 9. AI-training pipeline used by the development team.  
+
+  Figure 9. AI-training pipeline used by the development team.  
+
 Raw records combine: 
 
 * **Standardized test scores** (Mathematics, Spanish, English) available both as continuous values (0–1000) and a discrete 4-level performance indicator. 
@@ -253,11 +265,29 @@ Before data processing, data is encoded based on ACCUEE classification for surve
 
 The final cleaned dataset —554 features per student‐timepoint— is passed to the AI model. By exposing the model only to the grade-3 snapshot (demographics, test results, and engineered features), the development team trains it to forecast later academic performance and thereby flag, at an early stage, students who may benefit from remedial support or enrichment. With the availability of the AI system, Figure 10 shows the expected placement of the AI tool in the decision-making process based on the IFM model of the original process (see Figure 8). 
 
+.. figure:: img/S2_Figure10.png
+  :width: 600
+  :alt:  Figure 10. Expected placement of the AI tool in the decision-making process   
+
+  Figure 10. Expected placement of the AI tool in the decision-making process  with blue indicating elements that were added to the previous IFM and orange denoting the expectation of information change due to the AI addition.   
+
 The expected impact of the AI tool can be expressed as the changes that are due to the introduction of AI in the prospective system as compared to the current situation (or system). The expected impacts can be classified in the same structure of a confusion-matrix with a FRIA as used for the current situation (see Section 4.4.2.1). What changes is the quantity of these False Negatives and False Positives, which is influenced by the potential introduction of biases in the system. These biases (at the student level only) are visualized in Figure 11 for the original situation in Figure 8 and prospective setup in Figure 10.  
 
 Abstraction biases can occur when the questionnaire answers fail to capture or inappropriately group contextual information about students or their families. For example, limited answer choices may force complex situations into oversimplified categories. In addition, when humans make decisions, they interpret situations based on their own lens and past experiences, leading to potential misinterpretations or "interpretation bias" regarding the real circumstances around students and their performance. Finally, “presentation bias” can occur when a list of students flagged for support influences decision-makers simply through how it is displayed —for example, students appearing at the top of the list may receive disproportionate attention, or visual highlighting may make certain cases seem more urgent than they actually are. 
 
 For the sake of completeness, Figure 12 details the AI system biases coming from the training of the AI tool. Because these biases have been discussed in other use cases, we will not reiterate them here. 
+
+.. figure:: img/S2_Figure11.png
+  :width: 600
+  :alt:  Figure 11. Biases in current and prospective systems per channel type on the student level. 
+
+  Figure 11. Biases in current and prospective systems per channel type on the student level. 
+
+.. figure:: img/S2_Figure12.png
+  :width: 600
+  :alt:  Figure 12. Biases in current and prospective systems per channel type on the student level. 
+
+  Figure 12. Overview of biases per step of the AI-training pipeline. 
 
 **AI-Related Biases**
 Sampling bias in the AI system’s exam results arises because only a subset of courses is evaluated, so the model never sees the full picture of each student’s performance. Moreover, certain types of information (like subjective perception) is inherently hard to quantify, but we also observe that other key quantitative metrics are simply missing leading to “missing information bias” and further “abstraction bias”.  
@@ -317,7 +347,7 @@ We validated three families of interventions reflecting increasing alignment wit
 
 * Learned Fair Representations (LFR) to learn embeddings that obfuscate protected information while preserving task signal; 
 
-* Socio-economic residualization19 (co-designed with economists) as our **new method** that first explains outcomes using circumstance variables (e.g., ESCS, parental education, immigration background) and then trains on the residual (the component attributable to individual “effort”), thereby aligning statistical learning with the Inequality of Opportunity doctrine. This approach operationalizes “fairness through awareness” (explicitly modelling circumstances to control their influence) and directly connects AI fairness with policy-relevant IO fairness.  
+* Socio-economic residualization [2]_ (co-designed with economists) as our **new method** that first explains outcomes using circumstance variables (e.g., ESCS, parental education, immigration background) and then trains on the residual (the component attributable to individual “effort”), thereby aligning statistical learning with the Inequality of Opportunity doctrine. This approach operationalizes “fairness through awareness” (explicitly modelling circumstances to control their influence) and directly connects AI fairness with policy-relevant IO fairness.  
 
 Key outcomes
 ~~~~~~~~~~~~
@@ -400,3 +430,9 @@ In the following sections we show a list of preliminary experiments (on various 
 * `Pre-processing Mitigation <https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/ULL-Pre-processing%20Mitigation.pdf?rev=1.1>`_
 
 * `In-processing Mitigation <https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/ULL-In-processing%20Mitigation.pdf?rev=1.1>`_
+
+.. rubric:: References
+
+.. [1] Deliverable 6.4., Annex I.
+
+.. [2] Angel S. Marrero, Gustavo A. Marrero, Carlos Bethencourt, Joseph Giovanelli, and Roberta Calegari (2025). AI-fairness and equality of opportunity: a case study on educational performance. Eleventh ECINEQ meeting held at the World Bank Headquarters, Washington, D.C., USA, from July 9 to July 11, 2025
