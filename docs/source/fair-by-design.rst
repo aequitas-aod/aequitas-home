@@ -15,14 +15,14 @@ Fair-by-Design Methodology
            <area shape="rect" coords="240,360,430,420" href="https://github.com/aequitas-aod/aequitas-doc/blob/main/fair-by-design/FRIAF-Methodology-AEQUITAS.pdf" alt="FRIAF" title="FRIAF">
            <area shape="rect" coords="240,430,430,480" href="https://github.com/aequitas-aod/aequitas-doc/blob/main/fair-by-design/FDCGM-Methodology-AEQUITAS.pdf" alt="FDCGM" title="FDCGM">
            <area shape="rect" coords="240,500,430,540" href="https://github.com/aequitas-aod/aequitas-doc/blob/main/fair-by-design/FMM-Methodology-AEQUITAS.pdf" alt="FMM" title="FMM">
-           <area shape="rect" coords="240,550,430,580" href="https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/FOIM-Methodology-AEQUITAS.pdf?rev=1.1" alt="FOIM" title="FOIM">
+           <area shape="rect" coords="240,550,430,580" href="https://github.com/aequitas-aod/aequitas-doc/blob/main/fair-by-design/FOIM-Methodology-AEQUITAS.pdf" alt="FOIM" title="FOIM">
 
            <area shape="rect" coords="500,200,620,260" href="https://github.com/aequitas-aod/aequitas-doc/blob/main/fair-by-design/TAIRA-Methodology-AEQUITAS.pdf" alt="TAIRA" title="TAIRA">
            <area shape="rect" coords="500,280,620,340" href="https://github.com/aequitas-aod/aequitas-doc/blob/main/fair-by-design/FRIAF-Methodology-AEQUITAS.pdf" alt="FRIAF" title="FRIAF">
            <area shape="rect" coords="500,360,620,420" href="https://github.com/aequitas-aod/aequitas-doc/blob/main/fair-by-design/PSSA-Methodology-AEQUITAS.pdf" alt="PSSA" title="PSSA">
            <area shape="rect" coords="500,430,620,480" href="https://github.com/aequitas-aod/aequitas-doc/blob/main/fair-by-design/FDCGM-Methodology-AEQUITAS.pdf" alt="FDCGM" title="FDCGM">
            <area shape="rect" coords="500,500,620,540" href="https://github.com/aequitas-aod/aequitas-doc/blob/main/fair-by-design/FMM-Methodology-AEQUITAS.pdf" alt="FMM" title="FMM">
-           <area shape="rect" coords="500,550,620,580" href="https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/FOIM-Methodology-AEQUITAS.pdf?rev=1.1" alt="FOIM" title="FOIM">
+           <area shape="rect" coords="500,550,620,580" href="https://github.com/aequitas-aod/aequitas-doc/blob/main/fair-by-design/FOIM-Methodology-AEQUITAS.pdf" alt="FOIM" title="FOIM">
        </map>
    </div>
 
