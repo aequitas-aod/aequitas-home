@@ -239,17 +239,22 @@ The unified outcome of these exercises is the validation of the AEQUITAS methodo
 
 For Adecco, the overall learning is twofold. First, fairness-aware AI in recruitment requires a dual focus: strong dataset governance combined with algorithmic mitigation. Second, the methodology must extend to modern language technologies, where fairness risks emerge not only from data imbalance but also from linguistic representation and model opacity. By validating AEQUITAS on both fronts, Adecco has gained practical evidence that fairness can be systematically embedded in recruitment technologies—traditional and generative alike—thus aligning future development with both ethical standards and regulatory requirements. 
 
+Experimenter Reports
+--------------------
+See the detailed `reports <https://github.com/aequitas-aod/aequitas-doc/tree/main/usecase-hr1-adecco/reports>`_ of the usecase. 
+
+
 Design Process History - A Transparent Approach
 -----------------------------------------------
 In the following sections we show a list of preliminary experiments (on various areas) that we have conducted to refine the design of the experimenter. We show this history of our tentetives for the sake of increasing the transparency of the design process.
 
-* `Preliminary Analysis <https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/ADECCO_Data_Analysis.pdf>`_
+* `Preliminary Analysis <https://github.com/aequitas-aod/aequitas-doc/blob/main/usecase-hr1-adecco/preliminary%20tests/ADECCO_Data_Analysis.pdf>`_
 
-* `Data Pre-processing <https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/ADECCO_preprocessing.pdf?rev=1.1>`_
+* `Data Pre-processing <https://github.com/aequitas-aod/aequitas-doc/blob/main/usecase-hr1-adecco/preliminary%20tests/ADECCO_preprocessing.pdf>`_
 
-* `Bias Detection <https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/ADECCO_Bias_Detection.pdf>`_
+* `Bias Detection <https://github.com/aequitas-aod/aequitas-doc/blob/main/usecase-hr1-adecco/preliminary%20tests/ADECCO_Bias_Detection.pdf>`_
 
-* `Bias Mitigation <https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/ADECCO_Bias_Mitigation.pdf>`_
+* `Bias Mitigation <https://github.com/aequitas-aod/aequitas-doc/blob/main/usecase-hr1-adecco/preliminary%20tests/ADECCO_Bias_Mitigation.pdf>`_
 
 .. rubric:: References
 

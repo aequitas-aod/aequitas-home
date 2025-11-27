@@ -17,30 +17,37 @@ Together, these six use cases validate AEQUITAS as a **comprehensive Fair-by-Des
      - **Organisation**
      - **Methodology**
      - **Focus**
+     - **Preliminary Tests & Experimenter Reports**
    * - :doc:`HR1 <usecase-hr1-adecco>`
      - Adecco
      - FDCGM + LLM Assessment
      - Fairness in CV screening & job matching
+     - `HR1 folder <https://github.com/aequitas-aod/aequitas-doc/tree/main/usecase-hr1-adecco>`_
    * - :doc:`HR2 <usecase-hr2-akkodis>`
      - Akkodis
      - FDCGM + IFM + FaUCI
      - Fairness in AI-assisted recruitment
+     - `HR2 folder <https://github.com/aequitas-aod/aequitas-doc/tree/main/usecase-hr2-akkodis>`_
    * - :doc:`S1 <usecase-s1-child-neglect>`
      - IRCCS
      - PSSA + LLM-based Rule Extraction
      - Trustworthy AI for child neglect detection
+     -
    * - :doc:`S2 <usecase-s2-disadvantaged-students>`
      - Univ. of La Laguna
      - TAIRA + FRIA
      - Fairness in student performance prediction
+     - `S2 folder <https://github.com/aequitas-aod/aequitas-doc/tree/main/usecase-s2-disadvantaged-students>`_
    * - :doc:`HC1 <usecase-hc1-dermatology>`
      - IRCCS
      - FMM + Synthetic Data
      - Fairness in dermatological image diagnosis
+     - `HC1 folder <https://github.com/aequitas-aod/aequitas-doc/tree/main/usecase-hc1-dermatology>`_
    * - :doc:`HC2 <usecase-hc2-ecg>`
      - PRE
      - FOIM + Synthetic ECG
      - Fairness in biomedical signal interpretation
+     -
 
 Domain Recruitment
 ***********

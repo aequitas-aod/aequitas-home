@@ -319,13 +319,18 @@ The cumulative outcome of this use case is the demonstration of AEQUITAS as a fu
 
 In conclusion, the dermatology use case validated AEQUITAS’ capacity to link ethical design, socio-technical modelling, and experimental validation into a single, coherent fairness-by-design workflow. The approach demonstrated that bias mitigation through generative augmentation can substantially enhance equity in medical AI, provided that it is guided by transparent governance and continuous monitoring. Through this multi-layer validation, AEQUITAS delivered a concrete methodology for developing trustworthy, equitable, and regulation-ready AI tools in the healthcare sector.  
 
+Experimenter Reports
+--------------------
+See the detailed `reports <https://github.com/aequitas-aod/aequitas-doc/tree/main/usecase-hc1-dermatology/reports/best-solution>`_ of the usecase. 
+
+
 Design Process History - A Transparent Approach
 -----------------------------------------------
 In the following sections we show a list of preliminary experiments (on various areas) that we have conducted to refine the design of the experimenter. We show this history of our tentetives for the sake of increasing the transparency of the design process.
 
-* `Bias Detection <https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/HC1_Bias_Detection.pdf>`_
+* `Bias Detection <https://github.com/aequitas-aod/aequitas-doc/blob/main/usecase-hc1-dermatology/preliminary%20tests/HC1_Bias_Detection.pdf>`_
 
-* `Full Experimentation Pipeline within AEQUITAS <https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/HC1_Full_Experimentation_Pipeline.pdf?rev=1.1>`_
+* `Full Experimentation Pipeline within AEQUITAS <https://github.com/aequitas-aod/aequitas-doc/blob/main/usecase-hc1-dermatology/preliminary%20tests/HC1_Full_Experimentation_Pipeline.pdf>`_
 
 .. rubric:: References
 

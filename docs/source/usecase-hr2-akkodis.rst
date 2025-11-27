@@ -66,6 +66,10 @@ The data has been carefully anonymized. In particular, the name (and the surname
 
 No other pre-processing steps were applied to data. Further details of the data and analysis can be found here: :ref:`Akkodis`.
 
+Experimenter Reports
+--------------------
+See the detailed `reports <https://github.com/aequitas-aod/aequitas-doc/tree/main/usecase-hr2-akkodis/reports>`_ of the usecase. 
+
 .. rubric:: References
 
 .. [1] S. Barocas, M. Hardt and A. Narayanan, "Fairness and Machine Learning: Limitations and Opportunities," MIT Press, 2023, pp. 232-261.

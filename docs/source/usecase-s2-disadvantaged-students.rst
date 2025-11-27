@@ -421,15 +421,19 @@ Looking ahead, future iterations should systematically compare AI and non-AI alt
 
 Overall, the validation confirms that combining normative frameworks (TAIRA/FRIA) with fairness-aware experimentation in AEQUITAS offers a replicable pathway for trustworthy AI deployment in sensitive domains such as education. 
 
+Experimenter Reports
+--------------------
+See the detailed `reports <https://github.com/aequitas-aod/aequitas-doc/tree/main/usecase-s2-disadvantaged-students/reports>`_ of the usecase. 
+
 Design Process History - A Transparent Approach
 -----------------------------------------------
 In the following sections we show a list of preliminary experiments (on various areas) that we have conducted to refine the design of the experimenter. We show this history of our tentetives for the sake of increasing the transparency of the design process.
 
-* `Preliminary Analysis <https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/ULL-Preliminary%20Analysis.pdf?rev=1.1>`_
+* `Preliminary Analysis <https://github.com/aequitas-aod/aequitas-doc/blob/main/usecase-s2-disadvantaged-students/preliminary%20tests/ULL-Preliminary%20Analysis.pdf>`_
 
-* `Pre-processing Mitigation <https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/ULL-Pre-processing%20Mitigation.pdf?rev=1.1>`_
+* `Pre-processing Mitigation <https://github.com/aequitas-aod/aequitas-doc/blob/main/usecase-s2-disadvantaged-students/preliminary%20tests/ULL-Pre-processing%20Mitigation.pdf>`_
 
-* `In-processing Mitigation <https://apice.unibo.it/xwiki/bin/download/Aequitas/Deliverables/ULL-In-processing%20Mitigation.pdf?rev=1.1>`_
+* `In-processing Mitigation <https://github.com/aequitas-aod/aequitas-doc/blob/main/usecase-s2-disadvantaged-students/preliminary%20tests/ULL-In-processing%20Mitigation.pdf>`_
 
 .. rubric:: References
 
