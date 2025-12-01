@@ -322,6 +322,114 @@ Summarizing:
   same elements or objectives. Mapping and matching these diverging vocabulary
   and concepts are a lengthy but crucial process.
 
+.. _IFM:
+
+Information Flow Methodology (IFM): contextualized fairness by bridging social and technical perspectives
+*******************************************************************************************************
+
+IFM Model: How the System Is Represented
+========================================
+
+The IFM model is the output of the IFM methodology, a representation of a
+sociotechnical system built from information sites and channels.
+
+The model represents a decision-making system using information sites, which
+denote sources of information (for example, documents, datasets, or perceptual
+inputs), and information channels, which transform input from one or more sites
+into outputs at other sites. Examples of such transformations include
+recruitment decisions or sorting algorithms.
+
+.. image:: img/Framework_IFM2.jp2
+   :width: 600
+   :alt: Overview of the IFM information flow model
+
+The information flow model is typically represented as a directed graph, as
+illustrated in the figure below. The model has a clear directionality: it can be
+thought of like a river with upstream and downstream flows, although here the
+flows move through information sites and channels.
+
+.. image:: img/Framework_IFM1.jp2
+   :width: 600
+   :alt: Overview of the IFM information flow model
+
+Using the IFM model, it is possible to analyse a sociotechnical system to
+understand the origins of biases in information sites and channels, how these
+biases propagate downstream, whether specific channels mitigate them, and which
+biases lead to impacts on different stakeholders.
+
+Why the IFM Model Works
+=======================
+
+IFM can be used for multiple purposes. By creating a structural bridge between
+biases and stakeholder impacts, it enables methodical analyses such as FRIAS and
+supports the assignment of accountability by tracing the origins of biases. More
+broadly, this modelling methodology provides a structural base for a wide range
+of analyses.
+
+To make effective use of IFM, each model must be grounded in a specific use
+case. This means that the model’s structure (including the sequence of
+information sites and channels, as well as their content) must be determined by
+the use case. This grounding makes IFM inherently situated, since each model
+reflects the contextual and operational realities of the system being analysed.
+
+The IFM represents the decision-making process from start to finish, with a
+level of granularity that depends on the amount and quality of available
+information. Missing information is explicitly represented, helping identify
+potential biases and their downstream impacts. As a result, the IFM serves as a
+map of the system that ensures full use of the available information.
+
+Importantly, IFM does not structurally distinguish between AI models and human
+decision-making processes: both are modelled as channels with input and output
+information. This integrated treatment makes IFM a holistic approach to
+analysing sociotechnical systems.
+
+IFM Methodology: How the Model Is Built and Analysed
+====================================================
+
+The IFM methodology is the participatory, six-step process used to construct and
+analyse the IFM model.
+
+The involvement of stakeholders is crucial for making the IFM model situated and
+for determining the analytical focus, such as the types of impacts to examine
+and how these impacts emerge from the sociotechnical system. Stakeholders
+provide the initial input for identifying the relevant information sites and
+channels, as well as their sequence within the system. They then offer feedback
+that supports model refinement in Step 2, and they help concretise which types
+of impacts should be analysed in Step 5. The types of stakeholders that should
+be included in the participatory modelling are identified through the
+Stakeholder Identification Methodology.
+
+.. image:: img/Framework_IFM3.png
+   :width: 600
+   :alt: Overview of the IFM information flow model
+
+Steps 4 and 5 are primarily conducted by the IFM modellers. In Step 6, potential
+mitigation channels can be evaluated in terms of their influence on the impacts
+of interest. The six-step process can be extended or adapted depending on
+whether supplementary analyses are required.
+
+Summary
+=======
+
+* IFM model = the structure (sites, channels, flows).
+* IFM methodology = the process (six-step participatory procedure).
+* The methodology produces the model, and the model supports analyses.
+
+IFM forms a structural bridge between:
+
+* Bias and impact.
+* Technical properties and stakeholder outcomes.
+* Design choices and ethical guidelines.
+
+This is possible because:
+
+* The focus remains on the actual use case.
+* It captures the entire decision process of the use context.
+* It incorporates missing information (rather than ignoring it).
+* It provides a continuous connecting structure.
+* It supports other tools, metrics, guidelines, and risk estimates by giving
+  them a system-level foundation.
+
 
 FairBridge: Converting Legal and Social Principles into AI Fairness Techniques
 ******************************************************************************
