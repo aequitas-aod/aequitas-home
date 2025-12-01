@@ -62,6 +62,7 @@ In this use case, academic performance is the target variable, and some of the e
 * **ADVANCED:** above 600 points 
 
 This categorical format enables the analysis to be approached as a classification problem, facilitating the identification of distinct student profiles based on academic achievement. 
+
 .. _hr2-senstive features:
 
 Sensitive features
@@ -114,7 +115,7 @@ The steps include:
 
 7. Reflecting and documenting the process 
 
-This methodology was tested in a multidisciplinary workshop using the AEQUITAS use case: AI-assisted identification of disadvantaged students. The upcoming sections provide a brief overview of the key findings and methodology assessment. The full in-depth findings discussion can be found in [ ANNEX NAME] of this report. 
+This methodology was tested in a multidisciplinary workshop using the AEQUITAS use case: AI-assisted identification of disadvantaged students. The upcoming sections provide a brief overview of the key findings and methodology assessment. The full in-depth findings discussion can be found in `Appendix B  <https://github.com/aequitas-aod/aequitas-doc/blob/main/usecase-s2-disadvantaged-students/Appendix%20B-Use%20case%20S2%20detailed%20findings.pdf>`_ of this report. 
 
 .. _hr2-method:
 
@@ -155,7 +156,7 @@ Methodology Overview
 ~~~~~~~~~~~~~~~~~~~~
 The Fundamental Rights Impact Assessment for AI fairness (FRIA-F) focuses on systematically identifying, assessing, and mitigating risks that AI systems may pose to fundamental rights. It is rooted in the AI Act's risk-based approach and grounded in the Charter of Fundamental Rights of the EU (ECFR).  
 
-The methodology employs an "if-this-then-that" logic through reverse engineering. Participants are given design or implementation triggers of the AI system, then assess how these may violate fundamental rights such as dignity, equality, education, and non-discrimination as defined within the ECFR. Next, they propose mitigation strategies.  A multi-disciplinary workshop was held to apply the FRIA-F to the AEQUITAS use case of AI-assisted identification of disadvantaged students. The findings and the methodological assessment of the workshop are summarized below, while the full workshop report can be found in Appendix B.2.
+The methodology employs an "if-this-then-that" logic through reverse engineering. Participants are given design or implementation triggers of the AI system, then assess how these may violate fundamental rights such as dignity, equality, education, and non-discrimination as defined within the ECFR. Next, they propose mitigation strategies.  A multi-disciplinary workshop was held to apply the FRIA-F to the AEQUITAS use case of AI-assisted identification of disadvantaged students. The findings and the methodological assessment of the workshop are summarized below, while the full workshop report can be found in `Appendix B.2  <https://github.com/aequitas-aod/aequitas-doc/blob/main/usecase-s2-disadvantaged-students/Appendix%20B-Use%20case%20S2%20detailed%20findings.pdf>`_.
 
 Key Findings
 ~~~~~~~~~~~~
@@ -172,6 +173,7 @@ Overall, participants noted that FRIA-F assessments require both technical and n
 Assessment of FRIA
 ~~~~~~~~~~~~~~~~~~~~~
 The FRIA-F exercise revealed that the methodology is best suited for later stages of AI development, when system-level details such as data processing, model architecture, and outputs are available. In this workshop, the limited technical visibility of the AI-based education tool constrained participants’ ability to assess triggers or propose meaningful mitigation strategies. Much of the discussion remained speculative, focusing on hypothetical risks rather than concrete system behaviors. Participants recommended improvements such as pre-workshop preparation time, clearer structuring of questions by development phase, as well as expanding questions beyond technical triggers to include socio-technical aspects such as user interaction and decision-making contexts. 
+
 .. _hr2-exp:
 
 Socio-technical analysis using IFM 
@@ -424,6 +426,10 @@ Overall, the validation confirms that combining normative frameworks (TAIRA/FRIA
 Experimenter Reports
 --------------------
 See the detailed `reports <https://github.com/aequitas-aod/aequitas-doc/tree/main/usecase-s2-disadvantaged-students/reports>`_ of the usecase. 
+
+Appendix
+--------------------
+See the `Appendix B  <https://github.com/aequitas-aod/aequitas-doc/blob/main/usecase-s2-disadvantaged-students/Appendix%20B-Use%20case%20S2%20detailed%20findings.pdf>`_>`_ for the full report of the workshop.
 
 Design Process History - A Transparent Approach
 -----------------------------------------------

@@ -25,7 +25,7 @@ The Fair Model Methodology (FMM) is grounded in the EU AI Act’s high-risk requ
 
 * **Process Audits**: evaluating the extent fairness principles and values are included in the process shaping the design, development, and use of the AI system. This audit entails a risk evaluation of Fundamental Rights and of social/societal impacts. 
 
-The methodology was tested in a workshop using the AEQUITAS use case of an AI-assisted system for the identification of dermatological diseases in pediatric patients. The system is based on a transformer model trained on approximately 300 images of children with dermatological conditions, aiming to support more equitable diagnosis and reduce bias in clinical settings. A summary of the key findings and methodological validation can be found in the following sections [18]_. The full report can be found in Appendix C.1 
+The methodology was tested in a workshop using the AEQUITAS use case of an AI-assisted system for the identification of dermatological diseases in pediatric patients. The system is based on a transformer model trained on approximately 300 images of children with dermatological conditions, aiming to support more equitable diagnosis and reduce bias in clinical settings. A summary of the key findings and methodological validation can be found in the following sections [18]_. The full report can be found in `Appendix C.1  <https://github.com/aequitas-aod/aequitas-doc/blob/main/usecase-hc1-dermatology/Appendix%20C-%20Use%20case%20HC1%20detailed%20findings.pdf>`_
 
 Key Findings
 ~~~~~~~~~~~~
@@ -323,6 +323,9 @@ Experimenter Reports
 --------------------
 See the detailed `reports <https://github.com/aequitas-aod/aequitas-doc/tree/main/usecase-hc1-dermatology/reports/best-solution>`_ of the usecase. 
 
+Appendix
+--------------------
+See the `Appendix C  <https://github.com/aequitas-aod/aequitas-doc/blob/main/usecase-hc1-dermatology/Appendix%20C-%20Use%20case%20HC1%20detailed%20findings.pdf>`_ for the full report of the workshop.
 
 Design Process History - A Transparent Approach
 -----------------------------------------------

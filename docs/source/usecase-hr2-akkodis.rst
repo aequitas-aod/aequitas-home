@@ -70,6 +70,10 @@ Experimenter Reports
 --------------------
 See the detailed `reports <https://github.com/aequitas-aod/aequitas-doc/tree/main/usecase-hr2-akkodis/reports>`_ of the usecase. 
 
+Appendix
+--------------------
+See the `Appendix A <https://github.com/aequitas-aod/aequitas-doc/blob/main/usecase-hr2-akkodis/Appendix%20A-Use%20case%20HR2%20detailed%20findings.pdf>`_ for the full report of the workshop.
+
 .. rubric:: References
 
 .. [1] S. Barocas, M. Hardt and A. Narayanan, "Fairness and Machine Learning: Limitations and Opportunities," MIT Press, 2023, pp. 232-261.

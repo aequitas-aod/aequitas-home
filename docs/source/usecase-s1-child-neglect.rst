@@ -23,7 +23,7 @@ PSSA follows the structure of the AI Act definition, taking participants through
 
 To do so, the participants answered a series of reverse-engineered and interlocking questions intended to elicit less overt forms of social scoring and guide participants in dissecting which elements of the use case, if any, would be considered prohibited.   
 
-The AEQUITAS use case of AI Assisted Identification of Child Abuse and Neglect in Hospitals was evaluated during this workshop. The AI system aims to detect and assess the risk of child abuse and neglect in the hospital context, whilst reducing bias and discrimination on the basis of ethnicity and socioeconomic background. The full report can be found in Appendix D.1. 
+The AEQUITAS use case of AI Assisted Identification of Child Abuse and Neglect in Hospitals was evaluated during this workshop. The AI system aims to detect and assess the risk of child abuse and neglect in the hospital context, whilst reducing bias and discrimination on the basis of ethnicity and socioeconomic background. The full report can be found in `Appendix D.1  <https://github.com/aequitas-aod/aequitas-doc/blob/main/usecase-s1-child-neglect/Appendix%20D-%20Use%20case%20S1%20detailed%20findings.pdf>`_.
 
 Key Findings
 ~~~~~~~~~~~~
@@ -118,6 +118,10 @@ The experimentation phase translated these conceptual insights into practical va
 The ethical implications of these findings are significant. The project showed that fairness in child protection is not about equalizing algorithmic outputs, but about **ensuring just, transparent, and proportionate decision support that respects the vulnerability of the affected individuals**. It also demonstrated that fairness must be designed into the purpose and function of the system, transforming AI from a predictive or punitive instrument into a trustworthy clinical assistant. 
 
 In conclusion, the use case proved that AEQUITAS can deliver fairness assurance for AI systems operating in ethically complex environments, where the stakes involve not only performance but also fundamental human rights. The project established a replicable blueprint for developing AI tools that are compliant by design, explainable by construction, and ethically defensible in deployment. It also demonstrated that the fair and trustworthy use of AI in child protection is possible provided that technology remains firmly anchored in human judgment, social context, and respect for human dignity. 
+
+Appendix
+--------------------
+See the `Appendix D  <https://github.com/aequitas-aod/aequitas-doc/blob/main/usecase-s1-child-neglect/Appendix%20D-%20Use%20case%20S1%20detailed%20findings.pdf>`_ for the full report of the workshop.
 
 .. rubric:: References
 
