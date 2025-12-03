@@ -339,7 +339,7 @@ inputs), and information channels, which transform input from one or more sites
 into outputs at other sites. Examples of such transformations include
 recruitment decisions or sorting algorithms.
 
-.. image:: img/Framework_IFM2.jp2
+.. image:: img/Framework_IFM2.jpeg
    :width: 600
    :alt: Overview of the IFM information flow model
 
@@ -348,7 +348,7 @@ illustrated in the figure below. The model has a clear directionality: it can be
 thought of like a river with upstream and downstream flows, although here the
 flows move through information sites and channels.
 
-.. image:: img/Framework_IFM1.jp2
+.. image:: img/Framework_IFM1.jpeg
    :width: 600
    :alt: Overview of the IFM information flow model
 
